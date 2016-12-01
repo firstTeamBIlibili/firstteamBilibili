@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C8D83B052DDFA07850A16AD /* libPods-FirstTeamBilibili.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 495280B88A574CAC80335ADE /* libPods-FirstTeamBilibili.a */; };
+		890D26231DF00BC9004B3A0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26221DF00BC9004B3A0E /* main.m */; };
+		890D26261DF00BC9004B3A0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26251DF00BC9004B3A0E /* AppDelegate.m */; };
+		890D26291DF00BC9004B3A0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26281DF00BC9004B3A0E /* ViewController.m */; };
+		890D262C1DF00BC9004B3A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890D262A1DF00BC9004B3A0E /* Main.storyboard */; };
+		890D26311DF00BC9004B3A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890D262F1DF00BC9004B3A0E /* LaunchScreen.storyboard */; };
+		890D263C1DF00BCA004B3A0E /* FirstTeamBilibiliTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D263B1DF00BCA004B3A0E /* FirstTeamBilibiliTests.m */; };
+		890D26471DF00BCA004B3A0E /* FirstTeamBilibiliUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26461DF00BCA004B3A0E /* FirstTeamBilibiliUITests.m */; };
+		890D26561DF00C25004B3A0E /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26551DF00C25004B3A0E /* TabBarViewController.m */; };
+		890D266B1DF01197004B3A0E /* HCJLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D266A1DF01197004B3A0E /* HCJLiveViewController.m */; };
+		890D266E1DF01225004B3A0E /* YJGRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D266D1DF01225004B3A0E /* YJGRecommendViewController.m */; };
+		890D26711DF0127D004B3A0E /* YXHBangumiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26701DF0127D004B3A0E /* YXHBangumiViewController.m */; };
+		890D26751DF01703004B3A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890D26741DF01703004B3A0E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		890D26381DF00BCA004B3A0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 890D26161DF00BC9004B3A0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 890D261D1DF00BC9004B3A0E;
+			remoteInfo = FirstTeamBilibili;
+		};
+		890D26431DF00BCA004B3A0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 890D26161DF00BC9004B3A0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 890D261D1DF00BC9004B3A0E;
+			remoteInfo = FirstTeamBilibili;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0018EAFE9B38232551AD9CB6 /* Pods-FirstTeamBilibili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstTeamBilibili.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirstTeamBilibili/Pods-FirstTeamBilibili.release.xcconfig"; sourceTree = "<group>"; };
+		495280B88A574CAC80335ADE /* libPods-FirstTeamBilibili.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstTeamBilibili.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		890D261E1DF00BC9004B3A0E /* FirstTeamBilibili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTeamBilibili.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		890D26221DF00BC9004B3A0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		890D26241DF00BC9004B3A0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		890D26251DF00BC9004B3A0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		890D26271DF00BC9004B3A0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		890D26281DF00BC9004B3A0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		890D262B1DF00BC9004B3A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		890D26301DF00BC9004B3A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		890D26321DF00BC9004B3A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		890D26371DF00BCA004B3A0E /* FirstTeamBilibiliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstTeamBilibiliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		890D263B1DF00BCA004B3A0E /* FirstTeamBilibiliTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTeamBilibiliTests.m; sourceTree = "<group>"; };
+		890D263D1DF00BCA004B3A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		890D26421DF00BCA004B3A0E /* FirstTeamBilibiliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstTeamBilibiliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		890D26461DF00BCA004B3A0E /* FirstTeamBilibiliUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTeamBilibiliUITests.m; sourceTree = "<group>"; };
+		890D26481DF00BCA004B3A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		890D26541DF00C25004B3A0E /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		890D26551DF00C25004B3A0E /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		890D26691DF01197004B3A0E /* HCJLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCJLiveViewController.h; sourceTree = "<group>"; };
+		890D266A1DF01197004B3A0E /* HCJLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCJLiveViewController.m; sourceTree = "<group>"; };
+		890D266C1DF01225004B3A0E /* YJGRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJGRecommendViewController.h; sourceTree = "<group>"; };
+		890D266D1DF01225004B3A0E /* YJGRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJGRecommendViewController.m; sourceTree = "<group>"; };
+		890D266F1DF0127D004B3A0E /* YXHBangumiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHBangumiViewController.h; sourceTree = "<group>"; };
+		890D26701DF0127D004B3A0E /* YXHBangumiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHBangumiViewController.m; sourceTree = "<group>"; };
+		890D26741DF01703004B3A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E400DFEDAAEECAF7E3B66D6 /* Pods-FirstTeamBilibili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstTeamBilibili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstTeamBilibili/Pods-FirstTeamBilibili.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		890D261B1DF00BC9004B3A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C8D83B052DDFA07850A16AD /* libPods-FirstTeamBilibili.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		890D26341DF00BCA004B3A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		890D263F1DF00BCA004B3A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30482187ACDB713D647F0CD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E400DFEDAAEECAF7E3B66D6 /* Pods-FirstTeamBilibili.debug.xcconfig */,
+				0018EAFE9B38232551AD9CB6 /* Pods-FirstTeamBilibili.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		890D26151DF00BC9004B3A0E = {
+			isa = PBXGroup;
+			children = (
+				890D26201DF00BC9004B3A0E /* FirstTeamBilibili */,
+				890D263A1DF00BCA004B3A0E /* FirstTeamBilibiliTests */,
+				890D26451DF00BCA004B3A0E /* FirstTeamBilibiliUITests */,
+				890D261F1DF00BC9004B3A0E /* Products */,
+				30482187ACDB713D647F0CD6 /* Pods */,
+				AA766C11A1005743CBF1ECAB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		890D261F1DF00BC9004B3A0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				890D261E1DF00BC9004B3A0E /* FirstTeamBilibili.app */,
+				890D26371DF00BCA004B3A0E /* FirstTeamBilibiliTests.xctest */,
+				890D26421DF00BCA004B3A0E /* FirstTeamBilibiliUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		890D26201DF00BC9004B3A0E /* FirstTeamBilibili */ = {
+			isa = PBXGroup;
+			children = (
+				890D26241DF00BC9004B3A0E /* AppDelegate.h */,
+				890D26251DF00BC9004B3A0E /* AppDelegate.m */,
+				890D26541DF00C25004B3A0E /* TabBarViewController.h */,
+				890D26551DF00C25004B3A0E /* TabBarViewController.m */,
+				890D26571DF01161004B3A0E /* HCJLive */,
+				890D265D1DF0116C004B3A0E /* YJGRecommend */,
+				890D26631DF0117C004B3A0E /* YXHBangumi */,
+				890D26271DF00BC9004B3A0E /* ViewController.h */,
+				890D26281DF00BC9004B3A0E /* ViewController.m */,
+				890D262A1DF00BC9004B3A0E /* Main.storyboard */,
+				890D262F1DF00BC9004B3A0E /* LaunchScreen.storyboard */,
+				890D26321DF00BC9004B3A0E /* Info.plist */,
+				890D26741DF01703004B3A0E /* Assets.xcassets */,
+				890D26211DF00BC9004B3A0E /* Supporting Files */,
+			);
+			path = FirstTeamBilibili;
+			sourceTree = "<group>";
+		};
+		890D26211DF00BC9004B3A0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				890D26221DF00BC9004B3A0E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		890D263A1DF00BCA004B3A0E /* FirstTeamBilibiliTests */ = {
+			isa = PBXGroup;
+			children = (
+				890D263B1DF00BCA004B3A0E /* FirstTeamBilibiliTests.m */,
+				890D263D1DF00BCA004B3A0E /* Info.plist */,
+			);
+			path = FirstTeamBilibiliTests;
+			sourceTree = "<group>";
+		};
+		890D26451DF00BCA004B3A0E /* FirstTeamBilibiliUITests */ = {
+			isa = PBXGroup;
+			children = (
+				890D26461DF00BCA004B3A0E /* FirstTeamBilibiliUITests.m */,
+				890D26481DF00BCA004B3A0E /* Info.plist */,
+			);
+			path = FirstTeamBilibiliUITests;
+			sourceTree = "<group>";
+		};
+		890D26571DF01161004B3A0E /* HCJLive */ = {
+			isa = PBXGroup;
+			children = (
+				890D26581DF01161004B3A0E /* Models */,
+				890D26591DF01161004B3A0E /* others */,
+				890D265A1DF01161004B3A0E /* tools */,
+				890D265B1DF01161004B3A0E /* viewContrllers */,
+				890D265C1DF01161004B3A0E /* views */,
+			);
+			path = HCJLive;
+			sourceTree = "<group>";
+		};
+		890D26581DF01161004B3A0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		890D26591DF01161004B3A0E /* others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		890D265A1DF01161004B3A0E /* tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		890D265B1DF01161004B3A0E /* viewContrllers */ = {
+			isa = PBXGroup;
+			children = (
+				890D26691DF01197004B3A0E /* HCJLiveViewController.h */,
+				890D266A1DF01197004B3A0E /* HCJLiveViewController.m */,
+			);
+			path = viewContrllers;
+			sourceTree = "<group>";
+		};
+		890D265C1DF01161004B3A0E /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		890D265D1DF0116C004B3A0E /* YJGRecommend */ = {
+			isa = PBXGroup;
+			children = (
+				890D265E1DF0116C004B3A0E /* Models */,
+				890D265F1DF0116C004B3A0E /* others */,
+				890D26601DF0116C004B3A0E /* tools */,
+				890D26611DF0116C004B3A0E /* viewContrllers */,
+				890D26621DF0116C004B3A0E /* views */,
+			);
+			path = YJGRecommend;
+			sourceTree = "<group>";
+		};
+		890D265E1DF0116C004B3A0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		890D265F1DF0116C004B3A0E /* others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		890D26601DF0116C004B3A0E /* tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		890D26611DF0116C004B3A0E /* viewContrllers */ = {
+			isa = PBXGroup;
+			children = (
+				890D266C1DF01225004B3A0E /* YJGRecommendViewController.h */,
+				890D266D1DF01225004B3A0E /* YJGRecommendViewController.m */,
+			);
+			path = viewContrllers;
+			sourceTree = "<group>";
+		};
+		890D26621DF0116C004B3A0E /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		890D26631DF0117C004B3A0E /* YXHBangumi */ = {
+			isa = PBXGroup;
+			children = (
+				890D26641DF0117C004B3A0E /* Models */,
+				890D26651DF0117C004B3A0E /* others */,
+				890D26661DF0117C004B3A0E /* tools */,
+				890D26671DF0117C004B3A0E /* viewContrllers */,
+				890D26681DF0117C004B3A0E /* views */,
+			);
+			path = YXHBangumi;
+			sourceTree = "<group>";
+		};
+		890D26641DF0117C004B3A0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		890D26651DF0117C004B3A0E /* others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		890D26661DF0117C004B3A0E /* tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		890D26671DF0117C004B3A0E /* viewContrllers */ = {
+			isa = PBXGroup;
+			children = (
+				890D266F1DF0127D004B3A0E /* YXHBangumiViewController.h */,
+				890D26701DF0127D004B3A0E /* YXHBangumiViewController.m */,
+			);
+			path = viewContrllers;
+			sourceTree = "<group>";
+		};
+		890D26681DF0117C004B3A0E /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		AA766C11A1005743CBF1ECAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				495280B88A574CAC80335ADE /* libPods-FirstTeamBilibili.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		890D261D1DF00BC9004B3A0E /* FirstTeamBilibili */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 890D264B1DF00BCA004B3A0E /* Build configuration list for PBXNativeTarget "FirstTeamBilibili" */;
+			buildPhases = (
+				4BAFB66BFA3CE84A1C4A71CF /* [CP] Check Pods Manifest.lock */,
+				890D261A1DF00BC9004B3A0E /* Sources */,
+				890D261B1DF00BC9004B3A0E /* Frameworks */,
+				890D261C1DF00BC9004B3A0E /* Resources */,
+				E34AD568B837C43B7A8466FF /* [CP] Embed Pods Frameworks */,
+				BA3D77FDB8CF67F46D391A0B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirstTeamBilibili;
+			productName = FirstTeamBilibili;
+			productReference = 890D261E1DF00BC9004B3A0E /* FirstTeamBilibili.app */;
+			productType = "com.apple.product-type.application";
+		};
+		890D26361DF00BCA004B3A0E /* FirstTeamBilibiliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 890D264E1DF00BCA004B3A0E /* Build configuration list for PBXNativeTarget "FirstTeamBilibiliTests" */;
+			buildPhases = (
+				890D26331DF00BCA004B3A0E /* Sources */,
+				890D26341DF00BCA004B3A0E /* Frameworks */,
+				890D26351DF00BCA004B3A0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				890D26391DF00BCA004B3A0E /* PBXTargetDependency */,
+			);
+			name = FirstTeamBilibiliTests;
+			productName = FirstTeamBilibiliTests;
+			productReference = 890D26371DF00BCA004B3A0E /* FirstTeamBilibiliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		890D26411DF00BCA004B3A0E /* FirstTeamBilibiliUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 890D26511DF00BCA004B3A0E /* Build configuration list for PBXNativeTarget "FirstTeamBilibiliUITests" */;
+			buildPhases = (
+				890D263E1DF00BCA004B3A0E /* Sources */,
+				890D263F1DF00BCA004B3A0E /* Frameworks */,
+				890D26401DF00BCA004B3A0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				890D26441DF00BCA004B3A0E /* PBXTargetDependency */,
+			);
+			name = FirstTeamBilibiliUITests;
+			productName = FirstTeamBilibiliUITests;
+			productReference = 890D26421DF00BCA004B3A0E /* FirstTeamBilibiliUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		890D26161DF00BC9004B3A0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = WYZC;
+				TargetAttributes = {
+					890D261D1DF00BC9004B3A0E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					890D26361DF00BCA004B3A0E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 890D261D1DF00BC9004B3A0E;
+					};
+					890D26411DF00BCA004B3A0E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 890D261D1DF00BC9004B3A0E;
+					};
+				};
+			};
+			buildConfigurationList = 890D26191DF00BC9004B3A0E /* Build configuration list for PBXProject "FirstTeamBilibili" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 890D26151DF00BC9004B3A0E;
+			productRefGroup = 890D261F1DF00BC9004B3A0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				890D261D1DF00BC9004B3A0E /* FirstTeamBilibili */,
+				890D26361DF00BCA004B3A0E /* FirstTeamBilibiliTests */,
+				890D26411DF00BCA004B3A0E /* FirstTeamBilibiliUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		890D261C1DF00BC9004B3A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890D26311DF00BC9004B3A0E /* LaunchScreen.storyboard in Resources */,
+				890D26751DF01703004B3A0E /* Assets.xcassets in Resources */,
+				890D262C1DF00BC9004B3A0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		890D26351DF00BCA004B3A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		890D26401DF00BCA004B3A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BAFB66BFA3CE84A1C4A71CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA3D77FDB8CF67F46D391A0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirstTeamBilibili/Pods-FirstTeamBilibili-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E34AD568B837C43B7A8466FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirstTeamBilibili/Pods-FirstTeamBilibili-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		890D261A1DF00BC9004B3A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890D266E1DF01225004B3A0E /* YJGRecommendViewController.m in Sources */,
+				890D266B1DF01197004B3A0E /* HCJLiveViewController.m in Sources */,
+				890D26561DF00C25004B3A0E /* TabBarViewController.m in Sources */,
+				890D26291DF00BC9004B3A0E /* ViewController.m in Sources */,
+				890D26711DF0127D004B3A0E /* YXHBangumiViewController.m in Sources */,
+				890D26261DF00BC9004B3A0E /* AppDelegate.m in Sources */,
+				890D26231DF00BC9004B3A0E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		890D26331DF00BCA004B3A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890D263C1DF00BCA004B3A0E /* FirstTeamBilibiliTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		890D263E1DF00BCA004B3A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890D26471DF00BCA004B3A0E /* FirstTeamBilibiliUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		890D26391DF00BCA004B3A0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 890D261D1DF00BC9004B3A0E /* FirstTeamBilibili */;
+			targetProxy = 890D26381DF00BCA004B3A0E /* PBXContainerItemProxy */;
+		};
+		890D26441DF00BCA004B3A0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 890D261D1DF00BC9004B3A0E /* FirstTeamBilibili */;
+			targetProxy = 890D26431DF00BCA004B3A0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		890D262A1DF00BC9004B3A0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				890D262B1DF00BC9004B3A0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		890D262F1DF00BC9004B3A0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				890D26301DF00BC9004B3A0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		890D26491DF00BCA004B3A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		890D264A1DF00BCA004B3A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		890D264C1DF00BCA004B3A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E400DFEDAAEECAF7E3B66D6 /* Pods-FirstTeamBilibili.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = FirstTeamBilibili/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.FirstTeamBilibili;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Debug;
+		};
+		890D264D1DF00BCA004B3A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0018EAFE9B38232551AD9CB6 /* Pods-FirstTeamBilibili.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = FirstTeamBilibili/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.FirstTeamBilibili;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Release;
+		};
+		890D264F1DF00BCA004B3A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FirstTeamBilibiliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.FirstTeamBilibiliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstTeamBilibili.app/FirstTeamBilibili";
+			};
+			name = Debug;
+		};
+		890D26501DF00BCA004B3A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FirstTeamBilibiliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.FirstTeamBilibiliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstTeamBilibili.app/FirstTeamBilibili";
+			};
+			name = Release;
+		};
+		890D26521DF00BCA004B3A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FirstTeamBilibiliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.FirstTeamBilibiliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FirstTeamBilibili;
+			};
+			name = Debug;
+		};
+		890D26531DF00BCA004B3A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FirstTeamBilibiliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.FirstTeamBilibiliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FirstTeamBilibili;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		890D26191DF00BC9004B3A0E /* Build configuration list for PBXProject "FirstTeamBilibili" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				890D26491DF00BCA004B3A0E /* Debug */,
+				890D264A1DF00BCA004B3A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		890D264B1DF00BCA004B3A0E /* Build configuration list for PBXNativeTarget "FirstTeamBilibili" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				890D264C1DF00BCA004B3A0E /* Debug */,
+				890D264D1DF00BCA004B3A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		890D264E1DF00BCA004B3A0E /* Build configuration list for PBXNativeTarget "FirstTeamBilibiliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				890D264F1DF00BCA004B3A0E /* Debug */,
+				890D26501DF00BCA004B3A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		890D26511DF00BCA004B3A0E /* Build configuration list for PBXNativeTarget "FirstTeamBilibiliUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				890D26521DF00BCA004B3A0E /* Debug */,
+				890D26531DF00BCA004B3A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 890D26161DF00BC9004B3A0E /* Project object */;
+}
