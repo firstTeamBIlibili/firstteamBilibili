@@ -11,6 +11,7 @@
 #import "YXHNewBangumiModel.h"
 #import "YXHCollectionHeaderView.h"
 #import "YXHNewBangumiCollectionViewCell.h"
+#import "YXHRecommendCollectionViewCell.h"
 
 @interface YXHBangumiCollectionViewController ()<UICollectionViewDelegateFlowLayout>
 @property(nonatomic,strong)UICollectionViewFlowLayout * flow;
@@ -27,7 +28,8 @@
 
 @implementation YXHBangumiCollectionViewController
 
-static NSString * const reuseIdentifier = @"bangumiCell";
+static NSString * const bangumiCell = @"bangumiCell";
+static NSString * const recommendCell = @"recommendCell";
 
 - (instancetype)init
 {
@@ -59,7 +61,9 @@ static NSString * const reuseIdentifier = @"bangumiCell";
 
 - (void)setupCollectionView
 {
-    [self.collectionView registerNib:[UINib nibWithNibName:@"YXHNewBangumiCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"YXHNewBangumiCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:bangumiCell];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"YXHRecommendCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:recommendCell];
+    
     [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
     [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer"];
     self.collectionView.backgroundColor = [UIColor whiteColor];
@@ -83,7 +87,6 @@ static NSString * const reuseIdentifier = @"bangumiCell";
     [self.manager GET:@"http://bangumi.bilibili.com/api/app_index_page_v4?build=4000&device=phone&mobi_app=iphone&platform=ios" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         NSDictionary * dic = responseObject[@"result"];
-        NSLog(@"%@",dic);
         
         weakSelf.previousArray = [YXHNewBangumiModel mj_objectArrayWithKeyValuesArray:dic[@"previous"][@"list"]];
         weakSelf.serializingArray = [YXHNewBangumiModel mj_objectArrayWithKeyValuesArray:dic[@"serializing"]];
@@ -103,6 +106,7 @@ static NSString * const reuseIdentifier = @"bangumiCell";
     }];
     
     [self.manager GET:@"http://bangumi.bilibili.com/api/bangumi_recommend?actionKey=appkey&appkey=27eb53fc9058f8c3&build=4000&cursor=1478858400544&device=phone&mobi_app=iphone&pagesize=10&platform=ios&sign=f86302e3bf11c66ed93d4d3b007c8b3b&ts=1480467131" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject[@"result"]);
         weakSelf.recommendArray = [YXHRecommendModel mj_objectArrayWithKeyValuesArray:responseObject[@"result"]];
         [weakSelf.collectionView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -178,16 +182,28 @@ static NSString * const reuseIdentifier = @"bangumiCell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    YXHNewBangumiCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    cell.model = nil;
+    YXHNewBangumiCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:bangumiCell forIndexPath:indexPath];
+    //cell.model = nil;
     
     if (indexPath.section == 0)
     {
         cell.model = self.serializingArray[indexPath.item];
+        return cell;
+    }
+    else if (indexPath.section == 1)
+    {
+        cell.model = self.previousArray[indexPath.item];
+        return cell;
+    }
+    else
+    {
+        YXHRecommendCollectionViewCell * cell1 = [collectionView dequeueReusableCellWithReuseIdentifier:recommendCell forIndexPath:indexPath];
+        cell1.model = self.recommendArray[indexPath.item];
+        return cell1;
     }
     
     
-    return cell;
+   // return cell;
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
@@ -223,12 +239,19 @@ static NSString * const reuseIdentifier = @"bangumiCell";
     
     if (indexPath.section == 2)
     {
-        return CGSizeMake(self.view.width - 2 * 10, 150);
+        YXHRecommendModel * model = self.recommendArray[indexPath.item];
+        
+        return CGSizeMake(self.view.width - 2 * 10, [model itemHeight]);
+    }
+    else if (indexPath.section == 1)
+    {
+        return CGSizeMake((self.view.width - 4 * 10) / 3, 190);
     }
     else
     {
-        return CGSizeMake((self.view.width - 4 * 10) / 3, 200);
+        return CGSizeMake((self.view.width - 4 * 10) / 3, 210);
     }
+    
 }
 //设置区头尺寸
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section

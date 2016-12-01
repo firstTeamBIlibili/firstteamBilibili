@@ -15,4 +15,12 @@
         return @{@"ID":@"id"};
     }];
 }
+
+- (CGFloat)itemHeight
+{
+    CGFloat width = [UIScreen mainScreen].bounds.size.width - 2 * 10;
+    CGFloat descHeight = [self.desc boundingRectWithSize:CGSizeMake(width, 200) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} context:nil].size.height;
+    return 100 + 30 + descHeight;
+    
+}
 @end

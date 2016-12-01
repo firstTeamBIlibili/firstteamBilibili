@@ -23,5 +23,6 @@
 @property(nonatomic,copy)NSString * season_status;
 @property(nonatomic,assign)NSInteger watching_count;
 
+//- (CGFloat)itemHeight;
 
 @end

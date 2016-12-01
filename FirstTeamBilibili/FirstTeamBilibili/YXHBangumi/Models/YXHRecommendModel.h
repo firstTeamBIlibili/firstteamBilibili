@@ -17,4 +17,6 @@
 @property(nonatomic,copy)NSString * onDt;
 @property(nonatomic,copy)NSString * title;
 
+- (CGFloat)itemHeight;
+
 @end
