@@ -24,6 +24,8 @@ PODS:
   - NJKWebViewProgress/Core (0.2.3)
   - NJKWebViewProgress/ProgressView (0.2.3)
   - pop (1.0.9)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -37,6 +39,7 @@ DEPENDENCIES:
   - MJRefresh
   - NJKWebViewProgress
   - pop
+  - SDCycleScrollView
   - SDWebImage
   - SVProgressHUD
 
@@ -48,9 +51,10 @@ SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: de6b65d2c77018726fdcca62913e82dad7cdf489
+PODFILE CHECKSUM: 99d0d68028d507c0fbb0a22c0afec03de9b03839
 
 COCOAPODS: 1.1.1

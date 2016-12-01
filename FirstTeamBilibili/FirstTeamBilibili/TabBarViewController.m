@@ -9,7 +9,7 @@
 #import "TabBarViewController.h"
 #import "HCJLiveViewController.h"
 #import "YJGRecommendViewController.h"
-#import "YXHBangumiViewController.h"
+#import "YXHBangumiCollectionViewController.h"
 
 @interface TabBarViewController ()
 
@@ -21,8 +21,8 @@
     [super viewDidLoad];
     
     [self addChildViewController:[[HCJLiveViewController alloc] init]withTitle:@"直播" imageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
-    [self addChildViewController:[[HCJLiveViewController alloc] init]withTitle:@"推荐" imageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
-    [self addChildViewController:[[HCJLiveViewController alloc] init]withTitle:@"番剧" imageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
+    [self addChildViewController:[[YJGRecommendViewController alloc] init]withTitle:@"推荐" imageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
+    [self addChildViewController:[[YXHBangumiCollectionViewController alloc] init]withTitle:@"番剧" imageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
     
 }
 

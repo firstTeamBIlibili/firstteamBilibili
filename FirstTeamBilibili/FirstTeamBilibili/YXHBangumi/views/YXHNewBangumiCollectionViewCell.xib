@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YXHNewBangumiCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="191" height="167"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rEO-GA-cTY">
+                        <rect key="frame" x="0.0" y="0.0" width="191" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="JbG-Lm-QDe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6r-D6-zHY">
+                        <rect key="frame" x="0.0" y="99" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ft9-lZ-kng">
+                        <rect key="frame" x="0.0" y="120" width="191" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba9-Es-zzg">
+                        <rect key="frame" x="0.0" y="138" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Ba9-Es-zzg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3Bg-iv-g97"/>
+                <constraint firstAttribute="trailing" secondItem="Ft9-lZ-kng" secondAttribute="trailing" id="7tu-zX-omr"/>
+                <constraint firstItem="R6r-D6-zHY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Abd-Xp-3nl"/>
+                <constraint firstItem="rEO-GA-cTY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JbV-jx-XFp"/>
+                <constraint firstItem="R6r-D6-zHY" firstAttribute="bottom" secondItem="rEO-GA-cTY" secondAttribute="bottom" id="MyV-4b-s4Q"/>
+                <constraint firstItem="rEO-GA-cTY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eL0-1n-xR9"/>
+                <constraint firstItem="Ft9-lZ-kng" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="haV-Np-Vc8"/>
+                <constraint firstAttribute="trailing" secondItem="rEO-GA-cTY" secondAttribute="trailing" id="ngt-KF-Fpe"/>
+                <constraint firstItem="Ba9-Es-zzg" firstAttribute="top" secondItem="Ft9-lZ-kng" secondAttribute="bottom" id="tR2-1l-r1Q"/>
+                <constraint firstItem="Ft9-lZ-kng" firstAttribute="top" secondItem="R6r-D6-zHY" secondAttribute="bottom" id="vw8-bT-RnO"/>
+            </constraints>
+            <size key="customSize" width="191" height="167"/>
+            <connections>
+                <outlet property="coverImageVIewHeight" destination="JbG-Lm-QDe" id="8kT-UC-GI1"/>
+                <outlet property="coverImageView" destination="rEO-GA-cTY" id="g60-8V-uqw"/>
+                <outlet property="newest_indexLabel" destination="Ba9-Es-zzg" id="3F5-lh-K7y"/>
+                <outlet property="titleLabel" destination="Ft9-lZ-kng" id="sbl-RM-aJK"/>
+                <outlet property="watching_countLabel" destination="R6r-D6-zHY" id="PkH-zn-30M"/>
+            </connections>
+            <point key="canvasLocation" x="-260.5" y="-97.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

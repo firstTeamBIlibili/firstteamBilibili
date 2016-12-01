@@ -18,8 +18,16 @@
 		890D26561DF00C25004B3A0E /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26551DF00C25004B3A0E /* TabBarViewController.m */; };
 		890D266B1DF01197004B3A0E /* HCJLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D266A1DF01197004B3A0E /* HCJLiveViewController.m */; };
 		890D266E1DF01225004B3A0E /* YJGRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D266D1DF01225004B3A0E /* YJGRecommendViewController.m */; };
-		890D26711DF0127D004B3A0E /* YXHBangumiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26701DF0127D004B3A0E /* YXHBangumiViewController.m */; };
 		890D26751DF01703004B3A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890D26741DF01703004B3A0E /* Assets.xcassets */; };
+		890D267C1DF02051004B3A0E /* YXHCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26781DF02051004B3A0E /* YXHCollectionHeaderView.m */; };
+		890D267D1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D267A1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.m */; };
+		890D267E1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890D267B1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.xib */; };
+		890D26831DF02071004B3A0E /* YXHNewBangumiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26801DF02071004B3A0E /* YXHNewBangumiModel.m */; };
+		890D26841DF02071004B3A0E /* YXHRecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26821DF02071004B3A0E /* YXHRecommendModel.m */; };
+		890D26871DF0207E004B3A0E /* YXHBangumiCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26861DF0207E004B3A0E /* YXHBangumiCollectionViewController.m */; };
+		890D26981DF024E3004B3A0E /* UIImage+YXHCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26931DF024E3004B3A0E /* UIImage+YXHCycle.m */; };
+		890D26991DF024E3004B3A0E /* UIImageView+YXHCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26951DF024E3004B3A0E /* UIImageView+YXHCycle.m */; };
+		890D269A1DF024E3004B3A0E /* UIView+YXHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 890D26971DF024E3004B3A0E /* UIView+YXHCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,9 +71,25 @@
 		890D266A1DF01197004B3A0E /* HCJLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCJLiveViewController.m; sourceTree = "<group>"; };
 		890D266C1DF01225004B3A0E /* YJGRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJGRecommendViewController.h; sourceTree = "<group>"; };
 		890D266D1DF01225004B3A0E /* YJGRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJGRecommendViewController.m; sourceTree = "<group>"; };
-		890D266F1DF0127D004B3A0E /* YXHBangumiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHBangumiViewController.h; sourceTree = "<group>"; };
-		890D26701DF0127D004B3A0E /* YXHBangumiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHBangumiViewController.m; sourceTree = "<group>"; };
 		890D26741DF01703004B3A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		890D26771DF02051004B3A0E /* YXHCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHCollectionHeaderView.h; sourceTree = "<group>"; };
+		890D26781DF02051004B3A0E /* YXHCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHCollectionHeaderView.m; sourceTree = "<group>"; };
+		890D26791DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHNewBangumiCollectionViewCell.h; sourceTree = "<group>"; };
+		890D267A1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHNewBangumiCollectionViewCell.m; sourceTree = "<group>"; };
+		890D267B1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXHNewBangumiCollectionViewCell.xib; sourceTree = "<group>"; };
+		890D267F1DF02071004B3A0E /* YXHNewBangumiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHNewBangumiModel.h; sourceTree = "<group>"; };
+		890D26801DF02071004B3A0E /* YXHNewBangumiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHNewBangumiModel.m; sourceTree = "<group>"; };
+		890D26811DF02071004B3A0E /* YXHRecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHRecommendModel.h; sourceTree = "<group>"; };
+		890D26821DF02071004B3A0E /* YXHRecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHRecommendModel.m; sourceTree = "<group>"; };
+		890D26851DF0207E004B3A0E /* YXHBangumiCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHBangumiCollectionViewController.h; sourceTree = "<group>"; };
+		890D26861DF0207E004B3A0E /* YXHBangumiCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHBangumiCollectionViewController.m; sourceTree = "<group>"; };
+		890D26881DF020FB004B3A0E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		890D26921DF024E3004B3A0E /* UIImage+YXHCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YXHCycle.h"; sourceTree = "<group>"; };
+		890D26931DF024E3004B3A0E /* UIImage+YXHCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YXHCycle.m"; sourceTree = "<group>"; };
+		890D26941DF024E3004B3A0E /* UIImageView+YXHCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+YXHCycle.h"; sourceTree = "<group>"; };
+		890D26951DF024E3004B3A0E /* UIImageView+YXHCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+YXHCycle.m"; sourceTree = "<group>"; };
+		890D26961DF024E3004B3A0E /* UIView+YXHCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YXHCategory.h"; sourceTree = "<group>"; };
+		890D26971DF024E3004B3A0E /* UIView+YXHCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YXHCategory.m"; sourceTree = "<group>"; };
 		9E400DFEDAAEECAF7E3B66D6 /* Pods-FirstTeamBilibili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstTeamBilibili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstTeamBilibili/Pods-FirstTeamBilibili.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +165,7 @@
 				890D262A1DF00BC9004B3A0E /* Main.storyboard */,
 				890D262F1DF00BC9004B3A0E /* LaunchScreen.storyboard */,
 				890D26321DF00BC9004B3A0E /* Info.plist */,
+				890D26881DF020FB004B3A0E /* PrefixHeader.pch */,
 				890D26741DF01703004B3A0E /* Assets.xcassets */,
 				890D26211DF00BC9004B3A0E /* Supporting Files */,
 			);
@@ -274,11 +299,11 @@
 		890D26631DF0117C004B3A0E /* YXHBangumi */ = {
 			isa = PBXGroup;
 			children = (
-				890D26641DF0117C004B3A0E /* Models */,
-				890D26651DF0117C004B3A0E /* others */,
-				890D26661DF0117C004B3A0E /* tools */,
 				890D26671DF0117C004B3A0E /* viewContrllers */,
+				890D26641DF0117C004B3A0E /* Models */,
 				890D26681DF0117C004B3A0E /* views */,
+				890D26661DF0117C004B3A0E /* tools */,
+				890D26651DF0117C004B3A0E /* others */,
 			);
 			path = YXHBangumi;
 			sourceTree = "<group>";
@@ -286,6 +311,10 @@
 		890D26641DF0117C004B3A0E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				890D267F1DF02071004B3A0E /* YXHNewBangumiModel.h */,
+				890D26801DF02071004B3A0E /* YXHNewBangumiModel.m */,
+				890D26811DF02071004B3A0E /* YXHRecommendModel.h */,
+				890D26821DF02071004B3A0E /* YXHRecommendModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,6 +329,12 @@
 		890D26661DF0117C004B3A0E /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				890D26921DF024E3004B3A0E /* UIImage+YXHCycle.h */,
+				890D26931DF024E3004B3A0E /* UIImage+YXHCycle.m */,
+				890D26941DF024E3004B3A0E /* UIImageView+YXHCycle.h */,
+				890D26951DF024E3004B3A0E /* UIImageView+YXHCycle.m */,
+				890D26961DF024E3004B3A0E /* UIView+YXHCategory.h */,
+				890D26971DF024E3004B3A0E /* UIView+YXHCategory.m */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -307,8 +342,8 @@
 		890D26671DF0117C004B3A0E /* viewContrllers */ = {
 			isa = PBXGroup;
 			children = (
-				890D266F1DF0127D004B3A0E /* YXHBangumiViewController.h */,
-				890D26701DF0127D004B3A0E /* YXHBangumiViewController.m */,
+				890D26851DF0207E004B3A0E /* YXHBangumiCollectionViewController.h */,
+				890D26861DF0207E004B3A0E /* YXHBangumiCollectionViewController.m */,
 			);
 			path = viewContrllers;
 			sourceTree = "<group>";
@@ -316,6 +351,11 @@
 		890D26681DF0117C004B3A0E /* views */ = {
 			isa = PBXGroup;
 			children = (
+				890D26771DF02051004B3A0E /* YXHCollectionHeaderView.h */,
+				890D26781DF02051004B3A0E /* YXHCollectionHeaderView.m */,
+				890D26791DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.h */,
+				890D267A1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.m */,
+				890D267B1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -438,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				890D26311DF00BC9004B3A0E /* LaunchScreen.storyboard in Resources */,
+				890D267E1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.xib in Resources */,
 				890D26751DF01703004B3A0E /* Assets.xcassets in Resources */,
 				890D262C1DF00BC9004B3A0E /* Main.storyboard in Resources */,
 			);
@@ -513,10 +554,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				890D266E1DF01225004B3A0E /* YJGRecommendViewController.m in Sources */,
+				890D26841DF02071004B3A0E /* YXHRecommendModel.m in Sources */,
+				890D26991DF024E3004B3A0E /* UIImageView+YXHCycle.m in Sources */,
+				890D26981DF024E3004B3A0E /* UIImage+YXHCycle.m in Sources */,
+				890D26871DF0207E004B3A0E /* YXHBangumiCollectionViewController.m in Sources */,
 				890D266B1DF01197004B3A0E /* HCJLiveViewController.m in Sources */,
+				890D26831DF02071004B3A0E /* YXHNewBangumiModel.m in Sources */,
 				890D26561DF00C25004B3A0E /* TabBarViewController.m in Sources */,
+				890D267D1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.m in Sources */,
 				890D26291DF00BC9004B3A0E /* ViewController.m in Sources */,
-				890D26711DF0127D004B3A0E /* YXHBangumiViewController.m in Sources */,
+				890D269A1DF024E3004B3A0E /* UIView+YXHCategory.m in Sources */,
+				890D267C1DF02051004B3A0E /* YXHCollectionHeaderView.m in Sources */,
 				890D26261DF00BC9004B3A0E /* AppDelegate.m in Sources */,
 				890D26231DF00BC9004B3A0E /* main.m in Sources */,
 			);
@@ -668,8 +716,8 @@
 			baseConfigurationReference = 9E400DFEDAAEECAF7E3B66D6 /* Pods-FirstTeamBilibili.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/yanxiaohui/Desktop/firstTeamBIlibili/FirstTeamBilibili/FirstTeamBilibili/PrefixHeader.pch;
 				INFOPLIST_FILE = FirstTeamBilibili/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.FirstTeamBilibili;
@@ -683,8 +731,8 @@
 			baseConfigurationReference = 0018EAFE9B38232551AD9CB6 /* Pods-FirstTeamBilibili.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/yanxiaohui/Desktop/firstTeamBIlibili/FirstTeamBilibili/FirstTeamBilibili/PrefixHeader.pch;
 				INFOPLIST_FILE = FirstTeamBilibili/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.FirstTeamBilibili;
