@@ -10,6 +10,12 @@
 #import "UIImage+YXHCycle.h"
 
 @implementation UIImageView (YXHCycle)
+
+- (void)setCircleImageViewWithImageName:(NSString *)imageName
+{
+    self.image = [[UIImage imageNamed:imageName] circleImage];
+}
+
 - (void)setCircleImageViewWithUrl:(NSString *)url
 {
     WeakSelf;

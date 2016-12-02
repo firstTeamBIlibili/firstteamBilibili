@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImageView (YXHCycle)
+- (void)setCircleImageViewWithImageName:(NSString *)imageName;
 - (void)setCircleImageViewWithUrl:(NSString *)url;
 - (void)setRoundedImageViewWithUrl:(NSString *)url;
 @end

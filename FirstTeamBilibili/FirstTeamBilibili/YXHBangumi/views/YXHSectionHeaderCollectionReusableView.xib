@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="U6b-Vx-4bR" customClass="YXHSectionHeaderCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="meD-gy-5jw">
+                    <rect key="frame" x="10" y="10" width="30" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="qdx-zX-ijv"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxX-jN-kHW">
+                    <rect key="frame" x="45" y="10" width="42" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVO-cl-vfF">
+                    <rect key="frame" x="301" y="10" width="76" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="更多连载&gt;">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="More:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="0SY-Do-W1u"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dxX-jN-kHW" firstAttribute="leading" secondItem="meD-gy-5jw" secondAttribute="trailing" constant="5" id="5fA-RZ-jwh"/>
+                <constraint firstAttribute="trailing" secondItem="sVO-cl-vfF" secondAttribute="trailing" constant="10" id="9nS-aw-vcu"/>
+                <constraint firstItem="meD-gy-5jw" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="RBR-6k-giq"/>
+                <constraint firstItem="meD-gy-5jw" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="RgD-Dd-WF3"/>
+                <constraint firstItem="sVO-cl-vfF" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="U57-B6-nYj"/>
+                <constraint firstAttribute="bottom" secondItem="meD-gy-5jw" secondAttribute="bottom" constant="10" id="U8o-BL-j8M"/>
+                <constraint firstAttribute="bottom" secondItem="sVO-cl-vfF" secondAttribute="bottom" constant="10" id="gJ6-xK-sYc"/>
+                <constraint firstAttribute="bottom" secondItem="dxX-jN-kHW" secondAttribute="bottom" constant="10" id="nh4-ya-E0E"/>
+                <constraint firstItem="dxX-jN-kHW" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="olR-D7-kZu"/>
+            </constraints>
+            <connections>
+                <outlet property="headerImageView" destination="meD-gy-5jw" id="3hn-Pd-7k5"/>
+                <outlet property="moreButton" destination="sVO-cl-vfF" id="Pbr-3Z-9nV"/>
+                <outlet property="titleLabel" destination="dxX-jN-kHW" id="gSe-Te-sob"/>
+            </connections>
+            <point key="canvasLocation" x="70" y="10"/>
+        </collectionReusableView>
+    </objects>
+</document>
