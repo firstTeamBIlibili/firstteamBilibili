@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //注释
     [self setupTabBarItemAppearance];
     
     [self addChildViewController:[[HCJLiveViewController alloc] init]withTitle:@"直播" imageName:@"直播.jpg" selectedImageName:@"直播.jpg"];
