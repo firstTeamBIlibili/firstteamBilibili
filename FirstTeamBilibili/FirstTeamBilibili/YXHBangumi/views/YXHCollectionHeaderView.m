@@ -8,6 +8,7 @@
 
 #import "YXHCollectionHeaderView.h"
 #import "AnimationButton.h"
+#import "YXHBangumiListViewController.h"
 
 @interface YXHCollectionHeaderView()
 
@@ -91,7 +92,13 @@
 
 - (void)changeToAnimationList:(UIButton *)sender {
     NSInteger index = [self.animationButtons indexOfObject:sender];
-    NSLog(@"%ld",index);
+    //NSLog(@"%ld",index);
+    
+    YXHBangumiListViewController * listVC = [[YXHBangumiListViewController alloc] init];
+    listVC.index = index;
+    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:listVC];
+    
+    [self.window.rootViewController presentViewController:nav animated:YES completion:nil];
 }
 
 - (void)changeTofollowBangumi:(UIButton *)sender {
