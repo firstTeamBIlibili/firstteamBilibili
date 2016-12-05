@@ -16,7 +16,7 @@
 #import "MJRefresh.h"
 #import "MJExtension.h"
 #import "SDCycleScrollView.h"
-
+#import "Masonry.h"
 #import "UIView+YXHCategory.h"
 
 

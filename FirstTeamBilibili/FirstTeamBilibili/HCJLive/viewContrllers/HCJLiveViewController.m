@@ -12,6 +12,8 @@
 #import "LiveCollectionViewCell.h"
 #import "HeadCollectionReusableView.h"
 #import "BannerViewController.h"
+#import "IWantToLiveView.h"
+
 #define WIDTH self.view.frame.size.width
 #define HEIGHT self.view.frame.size.height
 
@@ -51,6 +53,7 @@ static NSString * const headReuseID = @"HEAD";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self setupNavgation];
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.navigationController.navigationBar.translucent = YES;
@@ -89,6 +92,20 @@ static NSString * const headReuseID = @"HEAD";
     self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(requestData)];
     //隐藏刷新状态
     [self.collectionView.mj_header setHidden:YES];
+    
+    
+    //超级玛丽图片
+    IWantToLiveView * iView = [[[NSBundle mainBundle] loadNibNamed:@"IWantToLiveView" owner:nil options:nil] firstObject];
+    iView.layer.cornerRadius = 20;
+    iView.layer.masksToBounds = YES;
+    [self.view addSubview:iView];
+    __weak typeof(self) weakSelf = self;
+    [iView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.height.mas_equalTo(40);
+        make.bottom.equalTo(weakSelf.view.mas_bottom).offset(-60);
+        make.right.equalTo(weakSelf.view.mas_right).offset(-20);
+    }];
+
     
 }
 

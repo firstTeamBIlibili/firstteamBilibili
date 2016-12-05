@@ -93,6 +93,15 @@
 		EBE153AE1DF559EE00AE7094 /* 番剧.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EBE153AB1DF559EE00AE7094 /* 番剧.jpeg */; };
 		EBE153AF1DF559EE00AE7094 /* 推荐.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBE153AC1DF559EE00AE7094 /* 推荐.jpg */; };
 		EBE153B01DF559EE00AE7094 /* 直播.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBE153AD1DF559EE00AE7094 /* 直播.jpg */; };
+		EBE153B41DF56C4600AE7094 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE153B21DF56C4600AE7094 /* LoginViewController.m */; };
+		EBE153B51DF56C4600AE7094 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE153B31DF56C4600AE7094 /* LoginViewController.xib */; };
+		EBE153B91DF56D6B00AE7094 /* 闭眼.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBE153B61DF56D6B00AE7094 /* 闭眼.jpg */; };
+		EBE153BA1DF56D6B00AE7094 /* 滑稽.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBE153B71DF56D6B00AE7094 /* 滑稽.jpg */; };
+		EBE153BB1DF56D6B00AE7094 /* 可怜.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBE153B81DF56D6B00AE7094 /* 可怜.jpg */; };
+		EBE153BD1DF56DE900AE7094 /* 用户名.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBE153BC1DF56DE900AE7094 /* 用户名.jpg */; };
+		EBE153BF1DF5759E00AE7094 /* IWantToLiveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE153BE1DF5759E00AE7094 /* IWantToLiveView.xib */; };
+		EBE153C21DF575C000AE7094 /* IWantToLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE153C11DF575C000AE7094 /* IWantToLiveView.m */; };
+		EBE153C41DF576ED00AE7094 /* 超级玛丽.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBE153C31DF576ED00AE7094 /* 超级玛丽.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,6 +248,17 @@
 		EBE153AB1DF559EE00AE7094 /* 番剧.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "番剧.jpeg"; sourceTree = "<group>"; };
 		EBE153AC1DF559EE00AE7094 /* 推荐.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "推荐.jpg"; sourceTree = "<group>"; };
 		EBE153AD1DF559EE00AE7094 /* 直播.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "直播.jpg"; sourceTree = "<group>"; };
+		EBE153B11DF56C4600AE7094 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		EBE153B21DF56C4600AE7094 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		EBE153B31DF56C4600AE7094 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		EBE153B61DF56D6B00AE7094 /* 闭眼.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "闭眼.jpg"; sourceTree = "<group>"; };
+		EBE153B71DF56D6B00AE7094 /* 滑稽.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "滑稽.jpg"; sourceTree = "<group>"; };
+		EBE153B81DF56D6B00AE7094 /* 可怜.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "可怜.jpg"; sourceTree = "<group>"; };
+		EBE153BC1DF56DE900AE7094 /* 用户名.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "用户名.jpg"; sourceTree = "<group>"; };
+		EBE153BE1DF5759E00AE7094 /* IWantToLiveView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IWantToLiveView.xib; sourceTree = "<group>"; };
+		EBE153C01DF575C000AE7094 /* IWantToLiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWantToLiveView.h; sourceTree = "<group>"; };
+		EBE153C11DF575C000AE7094 /* IWantToLiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWantToLiveView.m; sourceTree = "<group>"; };
+		EBE153C31DF576ED00AE7094 /* 超级玛丽.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "超级玛丽.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +394,9 @@
 				EBE1538D1DF54D7900AE7094 /* BannerViewController.m */,
 				EBE1538E1DF54D7900AE7094 /* DetialLiveViewController.h */,
 				EBE1538F1DF54D7900AE7094 /* DetialLiveViewController.m */,
+				EBE153B11DF56C4600AE7094 /* LoginViewController.h */,
+				EBE153B21DF56C4600AE7094 /* LoginViewController.m */,
+				EBE153B31DF56C4600AE7094 /* LoginViewController.xib */,
 			);
 			path = viewContrllers;
 			sourceTree = "<group>";
@@ -594,6 +617,9 @@
 				EBE1537E1DF54CCD00AE7094 /* LiveCollectionViewCell.h */,
 				EBE1537F1DF54CCD00AE7094 /* LiveCollectionViewCell.m */,
 				EBE153801DF54CCD00AE7094 /* LiveCollectionViewCell.xib */,
+				EBE153C01DF575C000AE7094 /* IWantToLiveView.h */,
+				EBE153C11DF575C000AE7094 /* IWantToLiveView.m */,
+				EBE153BE1DF5759E00AE7094 /* IWantToLiveView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -627,6 +653,11 @@
 				EBE153AB1DF559EE00AE7094 /* 番剧.jpeg */,
 				EBE153AC1DF559EE00AE7094 /* 推荐.jpg */,
 				EBE153AD1DF559EE00AE7094 /* 直播.jpg */,
+				EBE153B61DF56D6B00AE7094 /* 闭眼.jpg */,
+				EBE153B71DF56D6B00AE7094 /* 滑稽.jpg */,
+				EBE153B81DF56D6B00AE7094 /* 可怜.jpg */,
+				EBE153BC1DF56DE900AE7094 /* 用户名.jpg */,
+				EBE153C31DF576ED00AE7094 /* 超级玛丽.jpg */,
 			);
 			path = others;
 			sourceTree = "<group>";
@@ -740,6 +771,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE153BB1DF56D6B00AE7094 /* 可怜.jpg in Resources */,
+				EBE153BF1DF5759E00AE7094 /* IWantToLiveView.xib in Resources */,
 				EBE153AE1DF559EE00AE7094 /* 番剧.jpeg in Resources */,
 				897843531DF5693A004DA7FA /* YXHSuperTableViewCell.xib in Resources */,
 				89174DB21DF15BEA0093E6EC /* home_region_icon_33@2x.png in Resources */,
@@ -749,6 +782,7 @@
 				89174DA11DF1512E0093E6EC /* YXHSectionHeaderCollectionReusableView.xib in Resources */,
 				EBE153A21DF54F3D00AE7094 /* 御宅文化.png in Resources */,
 				89174DB71DF15BEA0093E6EC /* home_region_icon_153@3x.png in Resources */,
+				EBE153B91DF56D6B00AE7094 /* 闭眼.jpg in Resources */,
 				EBE153AA1DF54F3D00AE7094 /* 萌宅推荐.png in Resources */,
 				89174D931DF113710093E6EC /* home_bangumi_tableHead_indexIcon@3x~iphone.png in Resources */,
 				EBE153A01DF54F3D00AE7094 /* 唱见舞见.png in Resources */,
@@ -762,6 +796,8 @@
 				897843381DF568EC004DA7FA /* common_downArrow@3x.png in Resources */,
 				EBE153B01DF559EE00AE7094 /* 直播.jpg in Resources */,
 				897843371DF568EC004DA7FA /* common_downArrow@2x.png in Resources */,
+				EBE153C41DF576ED00AE7094 /* 超级玛丽.jpg in Resources */,
+				EBE153BA1DF56D6B00AE7094 /* 滑稽.jpg in Resources */,
 				897843351DF568EC004DA7FA /* common_back@3x.png in Resources */,
 				EBE153A71DF54F3D00AE7094 /* 电子竞技.png in Resources */,
 				890D267E1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.xib in Resources */,
@@ -779,6 +815,7 @@
 				897843341DF568EC004DA7FA /* common_back@2x.png in Resources */,
 				897843361DF568EC004DA7FA /* common_downArrow.png in Resources */,
 				89174DB01DF15BEA0093E6EC /* home_region_icon_32@2x.png in Resources */,
+				EBE153BD1DF56DE900AE7094 /* 用户名.jpg in Resources */,
 				89174DB61DF15BEA0093E6EC /* home_region_icon_153@2x.png in Resources */,
 				89174DC51DF1696A0093E6EC /* season_summer_icon@2x.png in Resources */,
 				89174DC01DF1696A0093E6EC /* bangumi_unfinished.png in Resources */,
@@ -788,6 +825,7 @@
 				89174D951DF113710093E6EC /* home_bangumi_tableHead_followIcon@2x~iphone.png in Resources */,
 				89174DC31DF1696A0093E6EC /* home_bangumi_tableHead_bangumiRecommend@3x~iphone.png in Resources */,
 				89174DB11DF15BEA0093E6EC /* home_region_icon_32@3x.png in Resources */,
+				EBE153B51DF56C4600AE7094 /* LoginViewController.xib in Resources */,
 				890D262C1DF00BC9004B3A0E /* Main.storyboard in Resources */,
 				EBE153A81DF54F3D00AE7094 /* 绘画专区.png in Resources */,
 				89174D881DF1135C0093E6EC /* home_bangumi_tableHead_week3@3x~iphone.png in Resources */,
@@ -883,12 +921,14 @@
 				890D26561DF00C25004B3A0E /* TabBarViewController.m in Sources */,
 				89174DA01DF1512E0093E6EC /* YXHSectionHeaderCollectionReusableView.m in Sources */,
 				EBE153811DF54CCD00AE7094 /* HeadCollectionReusableView.m in Sources */,
+				EBE153B41DF56C4600AE7094 /* LoginViewController.m in Sources */,
 				890D267D1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.m in Sources */,
 				890D26291DF00BC9004B3A0E /* ViewController.m in Sources */,
 				8978433E1DF56920004DA7FA /* YXHBangumiListViewController.m in Sources */,
 				890D269A1DF024E3004B3A0E /* UIView+YXHCategory.m in Sources */,
 				8978434D1DF5692A004DA7FA /* YXHSuperTableViewController.m in Sources */,
 				890D267C1DF02051004B3A0E /* YXHCollectionHeaderView.m in Sources */,
+				EBE153C21DF575C000AE7094 /* IWantToLiveView.m in Sources */,
 				890D26261DF00BC9004B3A0E /* AppDelegate.m in Sources */,
 				8978434C1DF5692A004DA7FA /* YXHOfficialTableViewController.m in Sources */,
 				8978433B1DF56914004DA7FA /* YXHNaviBarButton.m in Sources */,

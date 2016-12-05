@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="leftImageV" destination="fhQ-sd-tao" id="Ibr-XO-iIj"/>
+                <outlet property="passWordTextField" destination="lEm-vo-Igs" id="r1o-6t-W7g"/>
+                <outlet property="rightImageV" destination="gB6-lR-iEU" id="Syk-qJ-xyl"/>
+                <outlet property="userNameTextField" destination="JnU-nS-1oG" id="WIa-pd-ixK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jff-ye-LlT">
+                    <rect key="frame" x="0.0" y="84" width="375" height="100"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QhD-Er-hef">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="滑稽.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fhQ-sd-tao">
+                                    <rect key="frame" x="0.0" y="0.0" width="118.5" height="100"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="可怜.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dya-XO-U8F">
+                                    <rect key="frame" x="128.5" y="0.0" width="118" height="100"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="滑稽.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gB6-lR-iEU">
+                                    <rect key="frame" x="256.5" y="0.0" width="118.5" height="100"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="QhD-Er-hef" firstAttribute="leading" secondItem="Jff-ye-LlT" secondAttribute="leading" id="Fw0-dx-6Xy"/>
+                        <constraint firstAttribute="trailing" secondItem="QhD-Er-hef" secondAttribute="trailing" id="Y3Z-q1-sCw"/>
+                        <constraint firstAttribute="bottom" secondItem="QhD-Er-hef" secondAttribute="bottom" id="gjy-l8-Jab"/>
+                        <constraint firstItem="QhD-Er-hef" firstAttribute="top" secondItem="Jff-ye-LlT" secondAttribute="top" id="wvj-BQ-FiS"/>
+                        <constraint firstAttribute="height" constant="100" id="ybO-Ik-LUw"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gg5-l7-thy" userLabel="Stack View2">
+                    <rect key="frame" x="10" y="204" width="86.5" height="100"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="用户名.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5gJ-YV-v2S">
+                            <rect key="frame" x="0.0" y="0.0" width="86.5" height="40"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="用户名.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PL2-RN-gvs">
+                            <rect key="frame" x="0.0" y="60" width="86.5" height="40"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="qei-Cy-XYW"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dHj-xT-6rd" userLabel="Stack View3">
+                    <rect key="frame" x="106.5" y="204" width="258.5" height="100"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JnU-nS-1oG">
+                            <rect key="frame" x="0.0" y="0.0" width="258.5" height="40"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lEm-vo-Igs">
+                            <rect key="frame" x="0.0" y="60" width="258.5" height="40"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0dD-sw-3CY" userLabel="Stack View4">
+                    <rect key="frame" x="10" y="334" width="355" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9v-26-G6Z">
+                            <rect key="frame" x="0.0" y="0.0" width="172.5" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="注册账号">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="registAction:" destination="-1" eventType="touchUpInside" id="BYS-h2-dRl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCL-uA-IWA">
+                            <rect key="frame" x="182.5" y="0.0" width="172.5" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.73382445469798663" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <state key="normal" title="登录">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="OYH-8Q-jfQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="y10-PK-ZSL"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jff-ye-LlT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Wg-e6-gOO"/>
+                <constraint firstItem="gg5-l7-thy" firstAttribute="height" secondItem="dHj-xT-6rd" secondAttribute="height" id="6rG-eh-TW8"/>
+                <constraint firstItem="0dD-sw-3CY" firstAttribute="trailing" secondItem="dHj-xT-6rd" secondAttribute="trailing" id="CbK-dg-2TD"/>
+                <constraint firstItem="gg5-l7-thy" firstAttribute="top" secondItem="dHj-xT-6rd" secondAttribute="top" id="Iuc-R6-IAn"/>
+                <constraint firstItem="0dD-sw-3CY" firstAttribute="top" secondItem="dHj-xT-6rd" secondAttribute="bottom" constant="30" id="LFA-1p-9BK"/>
+                <constraint firstAttribute="trailing" secondItem="dHj-xT-6rd" secondAttribute="trailing" constant="10" id="LGY-l2-h57"/>
+                <constraint firstAttribute="trailing" secondItem="Jff-ye-LlT" secondAttribute="trailing" id="OwV-mq-OQD"/>
+                <constraint firstItem="Jff-ye-LlT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="Q8V-oL-49s"/>
+                <constraint firstItem="gg5-l7-thy" firstAttribute="top" secondItem="Jff-ye-LlT" secondAttribute="bottom" constant="20" id="dT1-hv-zai"/>
+                <constraint firstItem="dHj-xT-6rd" firstAttribute="width" secondItem="gg5-l7-thy" secondAttribute="width" multiplier="3" id="f4a-qJ-aPa"/>
+                <constraint firstItem="dHj-xT-6rd" firstAttribute="leading" secondItem="gg5-l7-thy" secondAttribute="trailing" constant="10" id="hNN-HR-zmH"/>
+                <constraint firstItem="gg5-l7-thy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="q6H-PQ-gTH"/>
+                <constraint firstItem="0dD-sw-3CY" firstAttribute="leading" secondItem="gg5-l7-thy" secondAttribute="leading" id="wdy-aZ-43E"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="可怜.jpg" width="300" height="300"/>
+        <image name="滑稽.jpg" width="420" height="420"/>
+        <image name="用户名.jpg" width="400" height="300"/>
+    </resources>
+</document>
