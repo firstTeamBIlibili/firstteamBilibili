@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="HeadCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="534" height="157"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vmb-SF-LO8">
+                    <rect key="frame" x="0.0" y="0.0" width="30" height="157"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Ijo-aw-g46"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWI-oQ-eA1">
+                    <rect key="frame" x="50" y="68" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="LWG-BV-jv2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfj-DM-Y9u">
+                    <rect key="frame" x="494" y="0.0" width="40" height="157"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="ndt-9y-q45"/>
+                    </constraints>
+                    <state key="normal" title="更多"/>
+                    <connections>
+                        <action selector="moreButtonAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="cI8-zD-hF9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lfj-DM-Y9u" secondAttribute="bottom" id="6Dw-Yl-gLS"/>
+                <constraint firstItem="Vmb-SF-LO8" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="8vw-AI-cFM"/>
+                <constraint firstAttribute="trailing" secondItem="lfj-DM-Y9u" secondAttribute="trailing" id="GaT-Rj-Sdk"/>
+                <constraint firstItem="VWI-oQ-eA1" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="KSA-8Q-Z4K"/>
+                <constraint firstItem="VWI-oQ-eA1" firstAttribute="leading" secondItem="Vmb-SF-LO8" secondAttribute="trailing" constant="20" id="bJc-i3-019"/>
+                <constraint firstAttribute="bottom" secondItem="Vmb-SF-LO8" secondAttribute="bottom" id="cv4-iZ-maC"/>
+                <constraint firstItem="Vmb-SF-LO8" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="wUi-0a-9bl"/>
+                <constraint firstItem="lfj-DM-Y9u" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="x02-iH-upY"/>
+            </constraints>
+            <connections>
+                <outlet property="areaLabel" destination="VWI-oQ-eA1" id="Y2M-mV-SWA"/>
+                <outlet property="headImageView" destination="Vmb-SF-LO8" id="2bT-Yd-yLD"/>
+            </connections>
+            <point key="canvasLocation" x="22" y="-198"/>
+        </collectionReusableView>
+    </objects>
+</document>

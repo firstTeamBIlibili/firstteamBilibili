@@ -54,6 +54,29 @@
 		89174DC41DF1696A0093E6EC /* season_summer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 89174DBD1DF1696A0093E6EC /* season_summer_icon.png */; };
 		89174DC51DF1696A0093E6EC /* season_summer_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89174DBE1DF1696A0093E6EC /* season_summer_icon@2x.png */; };
 		89174DC61DF1696A0093E6EC /* season_summer_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89174DBF1DF1696A0093E6EC /* season_summer_icon@3x.png */; };
+		EBE153811DF54CCD00AE7094 /* HeadCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1537C1DF54CCD00AE7094 /* HeadCollectionReusableView.m */; };
+		EBE153821DF54CCD00AE7094 /* HeadCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE1537D1DF54CCD00AE7094 /* HeadCollectionReusableView.xib */; };
+		EBE153831DF54CCD00AE7094 /* LiveCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1537F1DF54CCD00AE7094 /* LiveCollectionViewCell.m */; };
+		EBE153841DF54CCD00AE7094 /* LiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE153801DF54CCD00AE7094 /* LiveCollectionViewCell.xib */; };
+		EBE1538A1DF54D4C00AE7094 /* Banner.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE153871DF54D4C00AE7094 /* Banner.m */; };
+		EBE1538B1DF54D4C00AE7094 /* LiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE153891DF54D4C00AE7094 /* LiveModel.m */; };
+		EBE153901DF54D7900AE7094 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1538D1DF54D7900AE7094 /* BannerViewController.m */; };
+		EBE153911DF54D7900AE7094 /* DetialLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1538F1DF54D7900AE7094 /* DetialLiveViewController.m */; };
+		EBE1539F1DF54F3D00AE7094 /* 单机联机.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE153931DF54F3D00AE7094 /* 单机联机.png */; };
+		EBE153A01DF54F3D00AE7094 /* 唱见舞见.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE153941DF54F3D00AE7094 /* 唱见舞见.png */; };
+		EBE153A11DF54F3D00AE7094 /* 在线人数.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE153951DF54F3D00AE7094 /* 在线人数.png */; };
+		EBE153A21DF54F3D00AE7094 /* 御宅文化.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE153961DF54F3D00AE7094 /* 御宅文化.png */; };
+		EBE153A31DF54F3D00AE7094 /* 手机直播.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE153971DF54F3D00AE7094 /* 手机直播.png */; };
+		EBE153A41DF54F3D00AE7094 /* 手游直播.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE153981DF54F3D00AE7094 /* 手游直播.png */; };
+		EBE153A51DF54F3D00AE7094 /* 放映厅.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE153991DF54F3D00AE7094 /* 放映厅.png */; };
+		EBE153A61DF54F3D00AE7094 /* 生活娱乐.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE1539A1DF54F3D00AE7094 /* 生活娱乐.png */; };
+		EBE153A71DF54F3D00AE7094 /* 电子竞技.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE1539B1DF54F3D00AE7094 /* 电子竞技.png */; };
+		EBE153A81DF54F3D00AE7094 /* 绘画专区.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE1539C1DF54F3D00AE7094 /* 绘画专区.png */; };
+		EBE153A91DF54F3D00AE7094 /* 网络游戏.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE1539D1DF54F3D00AE7094 /* 网络游戏.png */; };
+		EBE153AA1DF54F3D00AE7094 /* 萌宅推荐.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE1539E1DF54F3D00AE7094 /* 萌宅推荐.png */; };
+		EBE153AE1DF559EE00AE7094 /* 番剧.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EBE153AB1DF559EE00AE7094 /* 番剧.jpeg */; };
+		EBE153AF1DF559EE00AE7094 /* 推荐.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBE153AC1DF559EE00AE7094 /* 推荐.jpg */; };
+		EBE153B01DF559EE00AE7094 /* 直播.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBE153AD1DF559EE00AE7094 /* 直播.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +169,35 @@
 		89174DBE1DF1696A0093E6EC /* season_summer_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "season_summer_icon@2x.png"; sourceTree = "<group>"; };
 		89174DBF1DF1696A0093E6EC /* season_summer_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "season_summer_icon@3x.png"; sourceTree = "<group>"; };
 		9E400DFEDAAEECAF7E3B66D6 /* Pods-FirstTeamBilibili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstTeamBilibili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstTeamBilibili/Pods-FirstTeamBilibili.debug.xcconfig"; sourceTree = "<group>"; };
+		EBE1537B1DF54CCD00AE7094 /* HeadCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadCollectionReusableView.h; sourceTree = "<group>"; };
+		EBE1537C1DF54CCD00AE7094 /* HeadCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadCollectionReusableView.m; sourceTree = "<group>"; };
+		EBE1537D1DF54CCD00AE7094 /* HeadCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadCollectionReusableView.xib; sourceTree = "<group>"; };
+		EBE1537E1DF54CCD00AE7094 /* LiveCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveCollectionViewCell.h; sourceTree = "<group>"; };
+		EBE1537F1DF54CCD00AE7094 /* LiveCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveCollectionViewCell.m; sourceTree = "<group>"; };
+		EBE153801DF54CCD00AE7094 /* LiveCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveCollectionViewCell.xib; sourceTree = "<group>"; };
+		EBE153861DF54D4C00AE7094 /* Banner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Banner.h; sourceTree = "<group>"; };
+		EBE153871DF54D4C00AE7094 /* Banner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banner.m; sourceTree = "<group>"; };
+		EBE153881DF54D4C00AE7094 /* LiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveModel.h; sourceTree = "<group>"; };
+		EBE153891DF54D4C00AE7094 /* LiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveModel.m; sourceTree = "<group>"; };
+		EBE1538C1DF54D7900AE7094 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		EBE1538D1DF54D7900AE7094 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		EBE1538E1DF54D7900AE7094 /* DetialLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetialLiveViewController.h; sourceTree = "<group>"; };
+		EBE1538F1DF54D7900AE7094 /* DetialLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetialLiveViewController.m; sourceTree = "<group>"; };
+		EBE153931DF54F3D00AE7094 /* 单机联机.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "单机联机.png"; sourceTree = "<group>"; };
+		EBE153941DF54F3D00AE7094 /* 唱见舞见.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "唱见舞见.png"; sourceTree = "<group>"; };
+		EBE153951DF54F3D00AE7094 /* 在线人数.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "在线人数.png"; sourceTree = "<group>"; };
+		EBE153961DF54F3D00AE7094 /* 御宅文化.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "御宅文化.png"; sourceTree = "<group>"; };
+		EBE153971DF54F3D00AE7094 /* 手机直播.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "手机直播.png"; sourceTree = "<group>"; };
+		EBE153981DF54F3D00AE7094 /* 手游直播.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "手游直播.png"; sourceTree = "<group>"; };
+		EBE153991DF54F3D00AE7094 /* 放映厅.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "放映厅.png"; sourceTree = "<group>"; };
+		EBE1539A1DF54F3D00AE7094 /* 生活娱乐.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "生活娱乐.png"; sourceTree = "<group>"; };
+		EBE1539B1DF54F3D00AE7094 /* 电子竞技.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电子竞技.png"; sourceTree = "<group>"; };
+		EBE1539C1DF54F3D00AE7094 /* 绘画专区.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "绘画专区.png"; sourceTree = "<group>"; };
+		EBE1539D1DF54F3D00AE7094 /* 网络游戏.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "网络游戏.png"; sourceTree = "<group>"; };
+		EBE1539E1DF54F3D00AE7094 /* 萌宅推荐.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "萌宅推荐.png"; sourceTree = "<group>"; };
+		EBE153AB1DF559EE00AE7094 /* 番剧.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "番剧.jpeg"; sourceTree = "<group>"; };
+		EBE153AC1DF559EE00AE7094 /* 推荐.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "推荐.jpg"; sourceTree = "<group>"; };
+		EBE153AD1DF559EE00AE7094 /* 直播.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "直播.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,27 +308,13 @@
 		890D26571DF01161004B3A0E /* HCJLive */ = {
 			isa = PBXGroup;
 			children = (
-				890D26581DF01161004B3A0E /* Models */,
-				890D26591DF01161004B3A0E /* others */,
+				EBE153851DF54D4C00AE7094 /* Models */,
+				EBE153921DF54F3D00AE7094 /* others */,
 				890D265A1DF01161004B3A0E /* tools */,
+				EBE1537A1DF54CCD00AE7094 /* View */,
 				890D265B1DF01161004B3A0E /* viewContrllers */,
-				890D265C1DF01161004B3A0E /* views */,
 			);
 			path = HCJLive;
-			sourceTree = "<group>";
-		};
-		890D26581DF01161004B3A0E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		890D26591DF01161004B3A0E /* others */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = others;
 			sourceTree = "<group>";
 		};
 		890D265A1DF01161004B3A0E /* tools */ = {
@@ -291,15 +329,12 @@
 			children = (
 				890D26691DF01197004B3A0E /* HCJLiveViewController.h */,
 				890D266A1DF01197004B3A0E /* HCJLiveViewController.m */,
+				EBE1538C1DF54D7900AE7094 /* BannerViewController.h */,
+				EBE1538D1DF54D7900AE7094 /* BannerViewController.m */,
+				EBE1538E1DF54D7900AE7094 /* DetialLiveViewController.h */,
+				EBE1538F1DF54D7900AE7094 /* DetialLiveViewController.m */,
 			);
 			path = viewContrllers;
-			sourceTree = "<group>";
-		};
-		890D265C1DF01161004B3A0E /* views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = views;
 			sourceTree = "<group>";
 		};
 		890D265D1DF0116C004B3A0E /* YJGRecommend */ = {
@@ -476,6 +511,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EBE1537A1DF54CCD00AE7094 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBE1537B1DF54CCD00AE7094 /* HeadCollectionReusableView.h */,
+				EBE1537C1DF54CCD00AE7094 /* HeadCollectionReusableView.m */,
+				EBE1537D1DF54CCD00AE7094 /* HeadCollectionReusableView.xib */,
+				EBE1537E1DF54CCD00AE7094 /* LiveCollectionViewCell.h */,
+				EBE1537F1DF54CCD00AE7094 /* LiveCollectionViewCell.m */,
+				EBE153801DF54CCD00AE7094 /* LiveCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBE153851DF54D4C00AE7094 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBE153861DF54D4C00AE7094 /* Banner.h */,
+				EBE153871DF54D4C00AE7094 /* Banner.m */,
+				EBE153881DF54D4C00AE7094 /* LiveModel.h */,
+				EBE153891DF54D4C00AE7094 /* LiveModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBE153921DF54F3D00AE7094 /* others */ = {
+			isa = PBXGroup;
+			children = (
+				EBE153931DF54F3D00AE7094 /* 单机联机.png */,
+				EBE153941DF54F3D00AE7094 /* 唱见舞见.png */,
+				EBE153951DF54F3D00AE7094 /* 在线人数.png */,
+				EBE153961DF54F3D00AE7094 /* 御宅文化.png */,
+				EBE153971DF54F3D00AE7094 /* 手机直播.png */,
+				EBE153981DF54F3D00AE7094 /* 手游直播.png */,
+				EBE153991DF54F3D00AE7094 /* 放映厅.png */,
+				EBE1539A1DF54F3D00AE7094 /* 生活娱乐.png */,
+				EBE1539B1DF54F3D00AE7094 /* 电子竞技.png */,
+				EBE1539C1DF54F3D00AE7094 /* 绘画专区.png */,
+				EBE1539D1DF54F3D00AE7094 /* 网络游戏.png */,
+				EBE1539E1DF54F3D00AE7094 /* 萌宅推荐.png */,
+				EBE153AB1DF559EE00AE7094 /* 番剧.jpeg */,
+				EBE153AC1DF559EE00AE7094 /* 推荐.jpg */,
+				EBE153AD1DF559EE00AE7094 /* 直播.jpg */,
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -585,32 +666,49 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE153AE1DF559EE00AE7094 /* 番剧.jpeg in Resources */,
 				89174DB21DF15BEA0093E6EC /* home_region_icon_33@2x.png in Resources */,
 				89174DC21DF1696A0093E6EC /* home_bangumi_tableHead_bangumiRecommend@2x~iphone.png in Resources */,
 				89174D871DF1135C0093E6EC /* home_bangumi_tableHead_week3@2x~iphone.png in Resources */,
 				890D26A21DF030BE004B3A0E /* YXHRecommendCollectionViewCell.xib in Resources */,
 				89174DA11DF1512E0093E6EC /* YXHSectionHeaderCollectionReusableView.xib in Resources */,
+				EBE153A21DF54F3D00AE7094 /* 御宅文化.png in Resources */,
 				89174DB71DF15BEA0093E6EC /* home_region_icon_153@3x.png in Resources */,
+				EBE153AA1DF54F3D00AE7094 /* 萌宅推荐.png in Resources */,
 				89174D931DF113710093E6EC /* home_bangumi_tableHead_indexIcon@3x~iphone.png in Resources */,
+				EBE153A01DF54F3D00AE7094 /* 唱见舞见.png in Resources */,
+				EBE153821DF54CCD00AE7094 /* HeadCollectionReusableView.xib in Resources */,
 				890D26311DF00BC9004B3A0E /* LaunchScreen.storyboard in Resources */,
 				89174DC11DF1696A0093E6EC /* bangumi_unfinished@2x.png in Resources */,
+				EBE1539F1DF54F3D00AE7094 /* 单机联机.png in Resources */,
+				EBE153A11DF54F3D00AE7094 /* 在线人数.png in Resources */,
+				EBE153A41DF54F3D00AE7094 /* 手游直播.png in Resources */,
 				89174DB31DF15BEA0093E6EC /* home_region_icon_33@3x.png in Resources */,
+				EBE153B01DF559EE00AE7094 /* 直播.jpg in Resources */,
+				EBE153A71DF54F3D00AE7094 /* 电子竞技.png in Resources */,
 				890D267E1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.xib in Resources */,
 				89174DC41DF1696A0093E6EC /* season_summer_icon.png in Resources */,
 				89174D941DF113710093E6EC /* home_bangumi_tableHead_followIcon@3x~iphone.png in Resources */,
+				EBE153A61DF54F3D00AE7094 /* 生活娱乐.png in Resources */,
 				89174DB41DF15BEA0093E6EC /* home_region_icon_152@2x.png in Resources */,
+				EBE153A31DF54F3D00AE7094 /* 手机直播.png in Resources */,
+				EBE153A91DF54F3D00AE7094 /* 网络游戏.png in Resources */,
+				EBE153A51DF54F3D00AE7094 /* 放映厅.png in Resources */,
 				89174DC61DF1696A0093E6EC /* season_summer_icon@3x.png in Resources */,
 				89174DB51DF15BEA0093E6EC /* home_region_icon_152@3x.png in Resources */,
+				EBE153AF1DF559EE00AE7094 /* 推荐.jpg in Resources */,
 				89174DB01DF15BEA0093E6EC /* home_region_icon_32@2x.png in Resources */,
 				89174DB61DF15BEA0093E6EC /* home_region_icon_153@2x.png in Resources */,
 				89174DC51DF1696A0093E6EC /* season_summer_icon@2x.png in Resources */,
 				89174DC01DF1696A0093E6EC /* bangumi_unfinished.png in Resources */,
 				89174D961DF113710093E6EC /* home_bangumi_tableHead_indexIcon@2x~iphone.png in Resources */,
 				890D26751DF01703004B3A0E /* Assets.xcassets in Resources */,
+				EBE153841DF54CCD00AE7094 /* LiveCollectionViewCell.xib in Resources */,
 				89174D951DF113710093E6EC /* home_bangumi_tableHead_followIcon@2x~iphone.png in Resources */,
 				89174DC31DF1696A0093E6EC /* home_bangumi_tableHead_bangumiRecommend@3x~iphone.png in Resources */,
 				89174DB11DF15BEA0093E6EC /* home_region_icon_32@3x.png in Resources */,
 				890D262C1DF00BC9004B3A0E /* Main.storyboard in Resources */,
+				EBE153A81DF54F3D00AE7094 /* 绘画专区.png in Resources */,
 				89174D881DF1135C0093E6EC /* home_bangumi_tableHead_week3@3x~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -689,12 +787,18 @@
 				890D26991DF024E3004B3A0E /* UIImageView+YXHCycle.m in Sources */,
 				890D26A11DF030BE004B3A0E /* YXHRecommendCollectionViewCell.m in Sources */,
 				890D26981DF024E3004B3A0E /* UIImage+YXHCycle.m in Sources */,
+				EBE153911DF54D7900AE7094 /* DetialLiveViewController.m in Sources */,
 				890D26871DF0207E004B3A0E /* YXHBangumiCollectionViewController.m in Sources */,
 				890D266B1DF01197004B3A0E /* HCJLiveViewController.m in Sources */,
 				890D26831DF02071004B3A0E /* YXHNewBangumiModel.m in Sources */,
+				EBE153901DF54D7900AE7094 /* BannerViewController.m in Sources */,
 				89174D991DF140230093E6EC /* AnimationButton.m in Sources */,
+				EBE1538B1DF54D4C00AE7094 /* LiveModel.m in Sources */,
+				EBE1538A1DF54D4C00AE7094 /* Banner.m in Sources */,
+				EBE153831DF54CCD00AE7094 /* LiveCollectionViewCell.m in Sources */,
 				890D26561DF00C25004B3A0E /* TabBarViewController.m in Sources */,
 				89174DA01DF1512E0093E6EC /* YXHSectionHeaderCollectionReusableView.m in Sources */,
+				EBE153811DF54CCD00AE7094 /* HeadCollectionReusableView.m in Sources */,
 				890D267D1DF02051004B3A0E /* YXHNewBangumiCollectionViewCell.m in Sources */,
 				890D26291DF00BC9004B3A0E /* ViewController.m in Sources */,
 				890D269A1DF024E3004B3A0E /* UIView+YXHCategory.m in Sources */,
@@ -851,7 +955,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/yanxiaohui/Desktop/firstTeamBIlibili/FirstTeamBilibili/FirstTeamBilibili/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/wyzc03/Desktop/LoveSingleDog/FirstTeamBilibili/FirstTeamBilibili/PrefixHeader.pch;
 				INFOPLIST_FILE = FirstTeamBilibili/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.FirstTeamBilibili;
@@ -866,7 +970,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/yanxiaohui/Desktop/firstTeamBIlibili/FirstTeamBilibili/FirstTeamBilibili/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/wyzc03/Desktop/LoveSingleDog/FirstTeamBilibili/FirstTeamBilibili/PrefixHeader.pch;
 				INFOPLIST_FILE = FirstTeamBilibili/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyzc.www.FirstTeamBilibili;

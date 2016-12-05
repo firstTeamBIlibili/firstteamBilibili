@@ -20,9 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self addChildViewController:[[HCJLiveViewController alloc] init]withTitle:@"直播" imageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
-    [self addChildViewController:[[YJGRecommendViewController alloc] init]withTitle:@"推荐" imageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
-    [self addChildViewController:[[YXHBangumiCollectionViewController alloc] init]withTitle:@"番剧" imageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
+    [self setupTabBarItemAppearance];
+    
+    [self addChildViewController:[[HCJLiveViewController alloc] init]withTitle:@"直播" imageName:@"直播.jpg" selectedImageName:@"直播.jpg"];
+    [self addChildViewController:[[YJGRecommendViewController alloc] init]withTitle:@"推荐" imageName:@"推荐.jpg" selectedImageName:@"推荐.jpg"];
+    [self addChildViewController:[[YXHBangumiCollectionViewController alloc] init]withTitle:@"番剧" imageName:@"番剧.jpeg" selectedImageName:@"番剧.jpeg"];
     
 }
 
@@ -31,9 +33,26 @@
     
     UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:viewContrller];
     nav.tabBarItem.title = title;
-    nav.tabBarItem.image = [UIImage imageNamed:imageName];
+    
+    
+    nav.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    
     nav.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];;
     [self addChildViewController:nav];
+}
+
+
+
+- (void)setupTabBarItemAppearance{
+    
+    UITabBarItem * item = [UITabBarItem appearance];
+    
+    
+    [item setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor]} forState:UIControlStateNormal];
+    
+    [item setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
+    
 }
 
 - (void)didReceiveMemoryWarning {
