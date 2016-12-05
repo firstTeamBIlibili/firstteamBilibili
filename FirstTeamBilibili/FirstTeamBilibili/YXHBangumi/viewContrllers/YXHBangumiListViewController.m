@@ -155,8 +155,9 @@
 
 - (void)setupScrollView
 {
-    _scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-    _scrollView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 0, 0);
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64 + 35, self.view.width, self.view.height - 64 - 35)];
+    //_scrollView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 0, 0);
     _scrollView.contentSize = CGSizeMake(self.view.width * self.childViewControllers.count, 0);
     _scrollView.delegate = self;
     _scrollView.pagingEnabled = YES;

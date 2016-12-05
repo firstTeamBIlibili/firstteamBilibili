@@ -586,16 +586,16 @@
 		8978433F1DF5692A004DA7FA /* YXHBangumiList */ = {
 			isa = PBXGroup;
 			children = (
-				897843401DF5692A004DA7FA /* YXHDomesticTableViewController.h */,
-				897843411DF5692A004DA7FA /* YXHDomesticTableViewController.m */,
-				897843421DF5692A004DA7FA /* YXHFinishedTableViewController.h */,
-				897843431DF5692A004DA7FA /* YXHFinishedTableViewController.m */,
-				897843441DF5692A004DA7FA /* YXHOfficialTableViewController.h */,
-				897843451DF5692A004DA7FA /* YXHOfficialTableViewController.m */,
 				897843461DF5692A004DA7FA /* YXHSuperTableViewController.h */,
 				897843471DF5692A004DA7FA /* YXHSuperTableViewController.m */,
 				897843481DF5692A004DA7FA /* YXHUnfinishedTableViewController.h */,
 				897843491DF5692A004DA7FA /* YXHUnfinishedTableViewController.m */,
+				897843421DF5692A004DA7FA /* YXHFinishedTableViewController.h */,
+				897843431DF5692A004DA7FA /* YXHFinishedTableViewController.m */,
+				897843401DF5692A004DA7FA /* YXHDomesticTableViewController.h */,
+				897843411DF5692A004DA7FA /* YXHDomesticTableViewController.m */,
+				897843441DF5692A004DA7FA /* YXHOfficialTableViewController.h */,
+				897843451DF5692A004DA7FA /* YXHOfficialTableViewController.m */,
 			);
 			path = YXHBangumiList;
 			sourceTree = "<group>";

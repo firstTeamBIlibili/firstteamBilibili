@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface YXHSuperTableViewController : UITableViewController
+- (NSString *)url;
 
 @end
