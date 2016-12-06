@@ -80,17 +80,8 @@ static NSString *headReuseID = @"head";
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.collectionView addSubview:_cycle];
 }
--(void)addTimer{
-    self.timer=[NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(imageo)  userInfo:nil repeats:YES];
-}
--(void)imageo{
-    int page=(int)self.pagectrol.currentPage;
-    if( page == 2 ){
-        page=0;
-    }else{
-        page ++;
-    }
-}
+
+
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
     
     CollectionReusableView *head=[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headReuseID forIndexPath:indexPath];
@@ -139,6 +130,8 @@ static NSString *headReuseID = @"head";
                 collectionModel * model = [[collectionModel alloc]init];
                 [model setValuesForKeysWithDictionary:dict];
                 model.cover = dict[@"cover"];
+                model.play=(int)dict[@"play"];
+            model.danmaku=(int)dict[@"danmaku"];
                 [arr addObject:model];
             }
         }
@@ -173,7 +166,7 @@ static NSString *headReuseID = @"head";
     _collectionView.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:_collectionView];
     //设置区头尺寸
-    flow.headerReferenceSize=CGSizeMake(0, 60);
+    flow.headerReferenceSize=CGSizeMake(0, 40);
     //注册cell
     [_collectionView registerNib:[UINib nibWithNibName:@"CollectionViewCell" bundle:nil] forCellWithReuseIdentifier:idetifer];
     //注册区头

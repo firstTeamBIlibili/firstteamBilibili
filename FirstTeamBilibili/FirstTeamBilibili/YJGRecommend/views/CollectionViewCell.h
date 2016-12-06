@@ -11,9 +11,13 @@
 @interface CollectionViewCell : UICollectionViewCell
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UIImageView *rightimageView;
 @property (strong,nonatomic)UILabel *lable;
-@property (weak, nonatomic) IBOutlet UIImageView *leftimageView;
+
+
+@property (strong, nonatomic) IBOutlet UIImageView *leftImage;
+@property (strong, nonatomic) IBOutlet UILabel *leftlable;
+@property (strong, nonatomic) IBOutlet UILabel *rightLable;
+@property (strong, nonatomic) IBOutlet UIImageView *rightImage;
 @property (strong, nonatomic) IBOutlet UILabel *lablele;
 @property (strong,nonatomic)collectionModel *models;
 

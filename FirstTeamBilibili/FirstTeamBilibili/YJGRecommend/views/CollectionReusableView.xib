@@ -15,13 +15,9 @@
             <rect key="frame" x="0.0" y="0.0" width="437" height="274"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nek-qG-JAD">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nek-qG-JAD">
                     <rect key="frame" x="80" y="0.0" width="70" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="3HU-KW-P41"/>
-                        <constraint firstAttribute="width" constant="70" id="4vD-eX-cha"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" title="Button                "/>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dg2-y4-cak">
                     <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
@@ -30,16 +26,31 @@
                         <constraint firstAttribute="height" constant="50" id="Umw-9B-OjF"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="进去看看" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghR-vZ-09v">
+                    <rect key="frame" x="367" y="0.0" width="70" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <constraints>
+                <constraint firstItem="ghR-vZ-09v" firstAttribute="width" secondItem="nek-qG-JAD" secondAttribute="width" id="9sC-YB-Rn9"/>
+                <constraint firstItem="nek-qG-JAD" firstAttribute="leading" secondItem="Dg2-y4-cak" secondAttribute="trailing" constant="10" id="Acb-wN-cnu"/>
+                <constraint firstItem="ghR-vZ-09v" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="HTX-LZ-M1X"/>
                 <constraint firstItem="Dg2-y4-cak" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="JG3-SF-n5A"/>
-                <constraint firstItem="nek-qG-JAD" firstAttribute="leading" secondItem="Dg2-y4-cak" secondAttribute="trailing" constant="10" id="Z8e-bK-3Ua"/>
-                <constraint firstItem="nek-qG-JAD" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="ZfL-XD-EEA"/>
+                <constraint firstItem="nek-qG-JAD" firstAttribute="width" secondItem="Dg2-y4-cak" secondAttribute="width" id="JWB-m1-q29"/>
+                <constraint firstItem="ghR-vZ-09v" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="QK2-CN-irm"/>
+                <constraint firstItem="ghR-vZ-09v" firstAttribute="height" secondItem="nek-qG-JAD" secondAttribute="height" id="Zze-gc-yNJ"/>
+                <constraint firstItem="nek-qG-JAD" firstAttribute="height" secondItem="Dg2-y4-cak" secondAttribute="height" id="jGa-6d-eqa"/>
+                <constraint firstItem="nek-qG-JAD" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="mEL-tD-bUf"/>
                 <constraint firstItem="Dg2-y4-cak" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="of6-3p-efi"/>
+                <constraint firstAttribute="trailing" secondItem="ghR-vZ-09v" secondAttribute="trailing" id="qTu-SY-sF6"/>
+                <constraint firstAttribute="trailing" secondItem="ghR-vZ-09v" secondAttribute="trailing" id="rkM-hS-Ojb"/>
             </constraints>
             <connections>
                 <outlet property="button" destination="nek-qG-JAD" id="hqL-wU-HDe"/>
                 <outlet property="image" destination="Dg2-y4-cak" id="K83-S1-fNE"/>
+                <outlet property="rightlable" destination="ghR-vZ-09v" id="5EQ-VQ-1zT"/>
             </connections>
             <point key="canvasLocation" x="92.5" y="166"/>
         </collectionReusableView>

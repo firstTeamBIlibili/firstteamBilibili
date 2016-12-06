@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CollectionReusableView : UICollectionReusableView
+@property (strong, nonatomic) IBOutlet UILabel *rightlable;
 @property (strong, nonatomic) IBOutlet UIButton *button;
 @property (strong, nonatomic) IBOutlet UIImageView *image;
 @end

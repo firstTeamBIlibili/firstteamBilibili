@@ -72,8 +72,6 @@
 		897843531DF5693A004DA7FA /* YXHSuperTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897843511DF5693A004DA7FA /* YXHSuperTableViewCell.xib */; };
 		C59C28AF1DF6463D002AD225 /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59C28AA1DF6463D002AD225 /* CollectionReusableView.m */; };
 		C59C28B01DF6463D002AD225 /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C59C28AB1DF6463D002AD225 /* CollectionReusableView.xib */; };
-		C59C28B11DF6463D002AD225 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C59C28AD1DF6463D002AD225 /* CollectionViewCell.m */; };
-		C59C28B21DF6463D002AD225 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C59C28AE1DF6463D002AD225 /* CollectionViewCell.xib */; };
 		C59C28B81DF64665002AD225 /* collectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59C28B61DF64665002AD225 /* collectionModel.m */; };
 		C59C28CB1DF64745002AD225 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = C59C28BA1DF64745002AD225 /* 11.png */; };
 		C59C28CC1DF64745002AD225 /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = C59C28BB1DF64745002AD225 /* 12.png */; };
@@ -93,6 +91,10 @@
 		C59C28DA1DF64745002AD225 /* 26.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C59C28C91DF64745002AD225 /* 26.jpg */; };
 		C59C28DB1DF64745002AD225 /* 27.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C59C28CA1DF64745002AD225 /* 27.jpg */; };
 		C59C29AB1DF64F3F002AD225 /* TuiJianModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59C29AA1DF64F3F002AD225 /* TuiJianModel.m */; };
+		C59C29DC1DF6C6BF002AD225 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C59C29DA1DF6C6BF002AD225 /* CollectionViewCell.m */; };
+		C59C29DD1DF6C6BF002AD225 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C59C29DB1DF6C6BF002AD225 /* CollectionViewCell.xib */; };
+		C59C29E01DF6C82A002AD225 /* 播放量.png in Resources */ = {isa = PBXBuildFile; fileRef = C59C29DE1DF6C82A002AD225 /* 播放量.png */; };
+		C59C29E11DF6C82A002AD225 /* 弹幕量.png in Resources */ = {isa = PBXBuildFile; fileRef = C59C29DF1DF6C82A002AD225 /* 弹幕量.png */; };
 		EBE153811DF54CCD00AE7094 /* HeadCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1537C1DF54CCD00AE7094 /* HeadCollectionReusableView.m */; };
 		EBE153821DF54CCD00AE7094 /* HeadCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE1537D1DF54CCD00AE7094 /* HeadCollectionReusableView.xib */; };
 		EBE153831DF54CCD00AE7094 /* LiveCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1537F1DF54CCD00AE7094 /* LiveCollectionViewCell.m */; };
@@ -245,9 +247,6 @@
 		C59C28A91DF6463D002AD225 /* CollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionReusableView.h; sourceTree = "<group>"; };
 		C59C28AA1DF6463D002AD225 /* CollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableView.m; sourceTree = "<group>"; };
 		C59C28AB1DF6463D002AD225 /* CollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
-		C59C28AC1DF6463D002AD225 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
-		C59C28AD1DF6463D002AD225 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
-		C59C28AE1DF6463D002AD225 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		C59C28B51DF64665002AD225 /* collectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collectionModel.h; sourceTree = "<group>"; };
 		C59C28B61DF64665002AD225 /* collectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionModel.m; sourceTree = "<group>"; };
 		C59C28BA1DF64745002AD225 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
@@ -269,6 +268,11 @@
 		C59C28CA1DF64745002AD225 /* 27.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 27.jpg; sourceTree = "<group>"; };
 		C59C29A91DF64F3F002AD225 /* TuiJianModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuiJianModel.h; sourceTree = "<group>"; };
 		C59C29AA1DF64F3F002AD225 /* TuiJianModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuiJianModel.m; sourceTree = "<group>"; };
+		C59C29D91DF6C6BF002AD225 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		C59C29DA1DF6C6BF002AD225 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		C59C29DB1DF6C6BF002AD225 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		C59C29DE1DF6C82A002AD225 /* 播放量.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放量.png"; sourceTree = "<group>"; };
+		C59C29DF1DF6C82A002AD225 /* 弹幕量.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "弹幕量.png"; sourceTree = "<group>"; };
 		EBE1537B1DF54CCD00AE7094 /* HeadCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadCollectionReusableView.h; sourceTree = "<group>"; };
 		EBE1537C1DF54CCD00AE7094 /* HeadCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadCollectionReusableView.m; sourceTree = "<group>"; };
 		EBE1537D1DF54CCD00AE7094 /* HeadCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadCollectionReusableView.xib; sourceTree = "<group>"; };
@@ -659,12 +663,12 @@
 		C59C28A81DF645E9002AD225 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C59C29D91DF6C6BF002AD225 /* CollectionViewCell.h */,
+				C59C29DA1DF6C6BF002AD225 /* CollectionViewCell.m */,
+				C59C29DB1DF6C6BF002AD225 /* CollectionViewCell.xib */,
 				C59C28A91DF6463D002AD225 /* CollectionReusableView.h */,
 				C59C28AA1DF6463D002AD225 /* CollectionReusableView.m */,
 				C59C28AB1DF6463D002AD225 /* CollectionReusableView.xib */,
-				C59C28AC1DF6463D002AD225 /* CollectionViewCell.h */,
-				C59C28AD1DF6463D002AD225 /* CollectionViewCell.m */,
-				C59C28AE1DF6463D002AD225 /* CollectionViewCell.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -672,6 +676,8 @@
 		C59C28B91DF64734002AD225 /* PICTURE */ = {
 			isa = PBXGroup;
 			children = (
+				C59C29DE1DF6C82A002AD225 /* 播放量.png */,
+				C59C29DF1DF6C82A002AD225 /* 弹幕量.png */,
 				C59C28BA1DF64745002AD225 /* 11.png */,
 				C59C28BB1DF64745002AD225 /* 12.png */,
 				C59C28BC1DF64745002AD225 /* 13.png */,
@@ -874,7 +880,6 @@
 				EBE153B91DF56D6B00AE7094 /* 闭眼.jpg in Resources */,
 				EBE153AA1DF54F3D00AE7094 /* 萌宅推荐.png in Resources */,
 				C59C28D51DF64745002AD225 /* 21.png in Resources */,
-				C59C28B21DF6463D002AD225 /* CollectionViewCell.xib in Resources */,
 				89174D931DF113710093E6EC /* home_bangumi_tableHead_indexIcon@3x~iphone.png in Resources */,
 				EBE153A01DF54F3D00AE7094 /* 唱见舞见.png in Resources */,
 				EBE153821DF54CCD00AE7094 /* HeadCollectionReusableView.xib in Resources */,
@@ -914,6 +919,7 @@
 				897843361DF568EC004DA7FA /* common_downArrow.png in Resources */,
 				C59C28D31DF64745002AD225 /* 19.png in Resources */,
 				89174DB01DF15BEA0093E6EC /* home_region_icon_32@2x.png in Resources */,
+				C59C29DD1DF6C6BF002AD225 /* CollectionViewCell.xib in Resources */,
 				EBE153BD1DF56DE900AE7094 /* 用户名.jpg in Resources */,
 				89174DB61DF15BEA0093E6EC /* home_region_icon_153@2x.png in Resources */,
 				89174DC51DF1696A0093E6EC /* season_summer_icon@2x.png in Resources */,
@@ -921,7 +927,9 @@
 				89174D961DF113710093E6EC /* home_bangumi_tableHead_indexIcon@2x~iphone.png in Resources */,
 				890D26751DF01703004B3A0E /* Assets.xcassets in Resources */,
 				EBE153841DF54CCD00AE7094 /* LiveCollectionViewCell.xib in Resources */,
+				C59C29E11DF6C82A002AD225 /* 弹幕量.png in Resources */,
 				C59C28D61DF64745002AD225 /* 22.png in Resources */,
+				C59C29E01DF6C82A002AD225 /* 播放量.png in Resources */,
 				C59C28D71DF64745002AD225 /* 23.jpg in Resources */,
 				C59C28CB1DF64745002AD225 /* 11.png in Resources */,
 				89174D951DF113710093E6EC /* home_bangumi_tableHead_followIcon@2x~iphone.png in Resources */,
@@ -1011,6 +1019,7 @@
 				8978432C1DF568D4004DA7FA /* YXHSuperModel.m in Sources */,
 				890D26A11DF030BE004B3A0E /* YXHRecommendCollectionViewCell.m in Sources */,
 				890D26981DF024E3004B3A0E /* UIImage+YXHCycle.m in Sources */,
+				C59C29DC1DF6C6BF002AD225 /* CollectionViewCell.m in Sources */,
 				C59C28AF1DF6463D002AD225 /* CollectionReusableView.m in Sources */,
 				8978434E1DF5692A004DA7FA /* YXHUnfinishedTableViewController.m in Sources */,
 				8978434A1DF5692A004DA7FA /* YXHDomesticTableViewController.m in Sources */,
@@ -1036,7 +1045,6 @@
 				890D267C1DF02051004B3A0E /* YXHCollectionHeaderView.m in Sources */,
 				EBE153C21DF575C000AE7094 /* IWantToLiveView.m in Sources */,
 				890D26261DF00BC9004B3A0E /* AppDelegate.m in Sources */,
-				C59C28B11DF6463D002AD225 /* CollectionViewCell.m in Sources */,
 				8978434C1DF5692A004DA7FA /* YXHOfficialTableViewController.m in Sources */,
 				8978433B1DF56914004DA7FA /* YXHNaviBarButton.m in Sources */,
 				897843521DF5693A004DA7FA /* YXHSuperTableViewCell.m in Sources */,

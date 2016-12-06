@@ -21,6 +21,6 @@
     
     self.lable.textColor=[UIColor whiteColor];
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:models.cover]];
-    
-}
-@end
+     self.leftlable.text=[NSString stringWithFormat:@"%ld",(long)models.play];
+     self.rightLable.text=[NSString stringWithFormat:@"%ld",(long)models.danmaku];
+}@end
