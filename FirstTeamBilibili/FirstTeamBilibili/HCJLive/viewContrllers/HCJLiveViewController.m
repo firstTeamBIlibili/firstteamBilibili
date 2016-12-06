@@ -80,6 +80,7 @@ static NSString * const headReuseID = @"HEAD";
     CGFloat cycleHeiht = HEIGHT / 5;
     _cycleView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(-20, -cycleHeiht - 10, WIDTH, cycleHeiht) imageURLStringsGroup:[self.bannerArr valueForKeyPath:@"img"]];
     _cycleView.delegate = self;
+    _cycleView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
     [self.collectionView addSubview:_cycleView];
     
     //设置collectionView的偏移量
