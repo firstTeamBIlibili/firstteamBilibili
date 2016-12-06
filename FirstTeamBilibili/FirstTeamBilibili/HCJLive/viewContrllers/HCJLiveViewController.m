@@ -47,6 +47,8 @@ static NSString * const headReuseID = @"HEAD";
 @property (nonatomic,strong) NSMutableArray * bannerArr;
 
 @property (nonatomic,strong) SDCycleScrollView * cycleView;
+//超级玛丽按钮(位于视图右下角)
+@property (nonatomic,strong) IWantToLiveView * iView;
 @end
 
 @implementation HCJLiveViewController
@@ -105,9 +107,62 @@ static NSString * const headReuseID = @"HEAD";
         make.bottom.equalTo(weakSelf.view.mas_bottom).offset(-60);
         make.right.equalTo(weakSelf.view.mas_right).offset(-20);
     }];
-
+    self.iView = iView;
+    
+    //加载动画
+    [self selfViewAnimation];
+    self.view.backgroundColor = [UIColor whiteColor];
     
 }
+- (void)selfViewAnimation{
+    
+    CATransform3D subTransform = CATransform3DIdentity;
+    
+    subTransform.m34 = - 1.0 / 200;
+    
+    self.view.layer.sublayerTransform = subTransform;
+    
+    CATransform3D transform3D = CATransform3DRotate(CATransform3DIdentity, M_PI_4, 1, 1, 1);
+    
+    self.collectionView.layer.transform = transform3D;
+
+    __weak typeof(self) weakSelf = self;
+    
+    [UIView animateWithDuration:2 delay:0 usingSpringWithDamping:0.3 initialSpringVelocity:0 options:UIViewAnimationOptionOverrideInheritedCurve animations:^{
+        
+        weakSelf.collectionView.layer.transform = CATransform3DIdentity;
+
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+
+
+//页面出现一次就显示一次动画
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self maliAnimation];
+}
+- (void)maliAnimation{
+    CAKeyframeAnimation * keyFrame = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    //动画持续时间
+    keyFrame.duration = 0.5;
+    //动画次数
+    keyFrame.repeatCount = 1.5;
+    //创建动画路径
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathAddRect(path, nil, CGRectMake(20, 64 + 20, WIDTH - 40, HEIGHT - 64 - 49 - 40 - 20));
+    //将路径添加给动画
+    keyFrame.path = path;
+    //释放路径
+    CGPathRelease(path);
+    
+    [self.iView.layer addAnimation:keyFrame forKey:nil];
+}
+
+
 
 - (UICollectionView *)collectionView{
     if (!_collectionView) {
