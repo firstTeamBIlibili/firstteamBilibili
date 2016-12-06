@@ -13,7 +13,7 @@
 #import "HeadCollectionReusableView.h"
 #import "BannerViewController.h"
 #import "IWantToLiveView.h"
-
+#import "MoseAndCatViewController.h"
 #define WIDTH self.view.frame.size.width
 #define HEIGHT self.view.frame.size.height
 
@@ -95,8 +95,6 @@ static NSString * const headReuseID = @"HEAD";
     self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(requestData)];
     //隐藏刷新状态
     [self.collectionView.mj_header setHidden:YES];
-    
-    
     //超级玛丽图片
     IWantToLiveView * iView = [[[NSBundle mainBundle] loadNibNamed:@"IWantToLiveView" owner:nil options:nil] firstObject];
     iView.layer.cornerRadius = 20;
@@ -210,6 +208,7 @@ static NSString * const headReuseID = @"HEAD";
     
     cell.backgroundColor = [UIColor whiteColor];
     cell.model = self.dataArr[indexPath.section][indexPath.item];
+    
     return cell;
 }
 #pragma mark 区头
@@ -224,6 +223,7 @@ static NSString * const headReuseID = @"HEAD";
     head.headImageView.image = [UIImage imageNamed:arr[indexPath.section]];
     head.areaLabel.text = arr[indexPath.section];
     head.modelArr = self.dataArr[indexPath.section];
+    head.indexPath = indexPath;
     return head;
 }
 
@@ -286,6 +286,30 @@ static NSString * const headReuseID = @"HEAD";
     
     
 }
+//cell点击方法
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    __weak typeof(self) weakSelf = self;
+    LiveCollectionViewCell * cell = (LiveCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    
+    cell.transform = CGAffineTransformRotate(CGAffineTransformIdentity, M_PI_4);
+    
+    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.3 initialSpringVelocity:0 options:UIViewAnimationOptionOverrideInheritedCurve animations:^{
+        
+        cell.transform = CGAffineTransformIdentity;
+        
+    } completion:^(BOOL finished) {
+        MoseAndCatViewController * mosAndCatVC = [[MoseAndCatViewController alloc] init];
+        
+        mosAndCatVC.model = _dataArr[indexPath.section][indexPath.item];
+        
+        [weakSelf.navigationController pushViewController:mosAndCatVC animated:YES];
+    }];
+    
+    
+    
+}
+
 
 
 //轮播图代理实现

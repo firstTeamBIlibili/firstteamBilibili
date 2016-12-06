@@ -9,7 +9,7 @@
 #import "DetialLiveViewController.h"
 #import "LiveModel.h"
 #import "LiveCollectionViewCell.h"
-
+#import "MoseAndCatViewController.h"
 
 
 #define WIDTH self.view.frame.size.width
@@ -84,6 +84,26 @@ static NSString * const reuseId = @"f;alsfjklasdjfkl";
 
 
 
+//cell点击方法
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    __weak typeof(self) weakSelf = self;
+    LiveCollectionViewCell * cell = (LiveCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    
+    cell.transform = CGAffineTransformRotate(CGAffineTransformIdentity, M_PI_4);
+    
+    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.3 initialSpringVelocity:0 options:UIViewAnimationOptionOverrideInheritedCurve animations:^{
+        
+        cell.transform = CGAffineTransformIdentity;
+        
+    } completion:^(BOOL finished) {
+        MoseAndCatViewController * mosAndCatVC = [[MoseAndCatViewController alloc] init];
+        
+        mosAndCatVC.model = _dataArr[indexPath.item];
+        
+        [weakSelf.navigationController pushViewController:mosAndCatVC animated:YES];
+    }];
+}
 
 
 

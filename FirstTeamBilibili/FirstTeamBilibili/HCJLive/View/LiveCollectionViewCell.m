@@ -95,6 +95,10 @@
     self.nameLabel.text = model.name;
     self.onlineLabel.text = [NSString stringWithFormat:@"%ld",model.online];
 }
+
+
+
+
 @end
 
 

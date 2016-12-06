@@ -23,6 +23,8 @@
     
     detialVC.dataArr = self.modelArr;
     
+    detialVC.indexPath = self.indexPath;
+    
     HCJLiveViewController * liveVC = (HCJLiveViewController *)self.nextResponder.nextResponder.nextResponder;
     
     [liveVC.navigationController pushViewController:detialVC animated:YES];

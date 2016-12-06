@@ -12,5 +12,5 @@
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (weak, nonatomic) IBOutlet UILabel *areaLabel;
 @property (nonatomic,strong) NSArray * modelArr;
-
+@property (nonatomic,strong) NSIndexPath  * indexPath;
 @end

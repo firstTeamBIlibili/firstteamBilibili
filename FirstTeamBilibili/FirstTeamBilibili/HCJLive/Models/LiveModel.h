@@ -19,4 +19,6 @@
 @property (nonatomic,copy) NSString * area;
 //当前在线人数
 @property (nonatomic,assign) NSInteger online;
+//直播房间号
+@property (nonatomic,assign) NSInteger room_id;
 @end
