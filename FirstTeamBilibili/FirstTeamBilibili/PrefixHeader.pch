@@ -10,6 +10,8 @@
 #define PrefixHeader_pch
 
 #define WeakSelf __weak typeof(self) weakSelf = self
+#define WIDTH  [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
 
 #import "UIImageView+WebCache.h"
 #import "AFNetworking.h"

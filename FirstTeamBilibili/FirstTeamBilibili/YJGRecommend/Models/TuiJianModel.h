@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface TuiJianModel : NSObject
-
+@property (copy,nonatomic)NSString *image;
+-(void)setValue:(id)value forUndefinedKey:(nonnull NSString *)key;
 @end

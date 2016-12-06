@@ -9,5 +9,12 @@
 #import "TuiJianModel.h"
 
 @implementation TuiJianModel
+-(void)setValue:(id)value forUndefinedKey:(nonnull NSString *)key{
+    
+}
+
+-(NSString *)description{
+    return [NSString stringWithFormat:@"%@",self.image];
+}
 
 @end
