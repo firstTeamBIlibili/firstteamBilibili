@@ -29,12 +29,13 @@
     self.imageView.y = 0;
     self.imageView.centerX = self.width * 0.5;
     
-    self.titleLabel.centerX = self.width * 0.5;
+    [self.titleLabel sizeToFit];
+    self.titleLabel.x = 0;
     self.titleLabel.y = CGRectGetMaxY(self.imageView.frame) + 5;
     self.titleLabel.width = self.width;
     
     
-    [self.titleLabel sizeToFit];
+
 }
 
 @end

@@ -41,11 +41,13 @@
     if (sectionIndex == 0)
     {
         self.moreButton.hidden = NO;
+        [self.moreButton setTitle:@"更多连载>" forState:UIControlStateNormal];
         self.url = @"http://bangumi.bilibili.com/api/timeline_v4?actionKey=appkey&appkey=27eb53fc9058f8c3&area_id=2%2C1%2C-1&build=4000&device=phone&mobi_app=iphone&platform=ios&see_mine=0&sign=abc768d13ede7289ff11d405c254426c&ts=1480485067";
     }
     else if (sectionIndex == 1)
     {
         self.moreButton.hidden = NO;
+        [self.moreButton setTitle:@"分季列表>" forState:UIControlStateNormal];
         self.url = @"http://bangumi.bilibili.com/api/season_group.json?build=4000&device=phone&mobi_app=iphone&platform=ios";
     }
     else
@@ -54,7 +56,15 @@
     }
 }
 - (IBAction)More:(UIButton *)sender {
-    NSLog(@"%@",self.url);
+    //NSLog(@"%@",self.url);
+    if ([sender.titleLabel.text isEqualToString:@"更多连载>"])
+    {
+        NSLog(@"123");
+    }
+    else if ([sender.titleLabel.text isEqualToString:@"分季列表>"])
+    {
+        NSLog(@"111");
+    }
 }
 
 @end

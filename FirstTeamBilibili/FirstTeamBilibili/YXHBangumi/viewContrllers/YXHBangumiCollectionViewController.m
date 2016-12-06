@@ -13,6 +13,7 @@
 #import "YXHNewBangumiCollectionViewCell.h"
 #import "YXHRecommendCollectionViewCell.h"
 #import "YXHSectionHeaderCollectionReusableView.h"
+#import "YXHBangumiDetailViewController.h"
 
 @interface YXHBangumiCollectionViewController ()<UICollectionViewDelegateFlowLayout>
 @property(nonatomic,strong)UICollectionViewFlowLayout * flow;
@@ -255,6 +256,7 @@ static NSString * const recommendCell = @"recommendCell";
    // return cell;
 }
 
+//区头
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
     NSArray * headerImageArray = @[@"bangumi_unfinished.png",@"season_summer_icon",@"home_bangumi_tableHead_bangumiRecommend"];
@@ -321,15 +323,26 @@ static NSString * const recommendCell = @"recommendCell";
     return CGSizeZero;
 }
 
-//跳转到下一页
-- (void)MoreNewBangumi
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"123");
-}
-
-- (void)MoreTimeListBangumi
-{
-    NSLog(@"456");
+    YXHBangumiDetailViewController * detailVC = [[YXHBangumiDetailViewController alloc] init];
+    if (indexPath.section == 0)
+    {
+        YXHNewBangumiModel * model = _serializingArray[indexPath.row];
+        detailVC.param = model.season_id;
+    }
+    else if (indexPath.section == 1)
+    {
+        YXHNewBangumiModel * model = _previousArray[indexPath.row];
+        detailVC.param = model.season_id;
+    }
+    else if (indexPath.section == 2)
+    {
+        YXHRecommendModel * model = _recommendArray[indexPath.item];
+        detailVC.param = model.ID;
+    }
+    [self.navigationController pushViewController:detailVC animated:YES];
+    
 }
 
 @end

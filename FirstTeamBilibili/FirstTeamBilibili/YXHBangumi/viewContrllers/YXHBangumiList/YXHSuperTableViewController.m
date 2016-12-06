@@ -9,12 +9,13 @@
 #import "YXHSuperTableViewController.h"
 #import "YXHSuperTableViewCell.h"
 #import "YXHSuperModel.h"
+#import "YXHSuperSectionHeaderView.h"
 
 @interface YXHSuperTableViewController ()
 @property(nonatomic,strong)AFHTTPSessionManager * manager;
 
-@property(nonatomic,strong)NSMutableArray * recommendArray;
-@property(nonatomic,strong)NSMutableArray * newestArray;
+@property(nonatomic,strong)NSMutableArray * recommendArray; //热门推荐
+@property(nonatomic,strong)NSMutableArray * newestArray;  //最新视频
 
 @end
 static NSString * reuseId = @"superCell";
@@ -40,6 +41,7 @@ static NSString * reuseId = @"superCell";
 - (void)setupTableView
 {
     [self.tableView registerNib:[UINib nibWithNibName:@"YXHSuperTableViewCell" bundle:nil] forCellReuseIdentifier:reuseId];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -94,5 +96,19 @@ static NSString * reuseId = @"superCell";
     return cell;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    NSArray * imageArr = @[@"hd_home_recommend",@"hd_home_new_region"];
+    NSArray * titleArr = @[@"热门推荐",@"最新视频"];
+    YXHSuperSectionHeaderView * header = [YXHSuperSectionHeaderView viewFromXib];
+    header.headerImageView.image = [UIImage imageNamed:imageArr[section]];
+    header.titleLabel.text = titleArr[section];
+    return header;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 40;
+}
 
 @end
