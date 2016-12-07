@@ -9,12 +9,16 @@
 #import "YXHCollectionHeaderView.h"
 #import "AnimationButton.h"
 #import "YXHBangumiListViewController.h"
+#import "LoginViewController.h"
+#import "YXHBangumiCollectionViewController.h"
 
 @interface YXHCollectionHeaderView()
 
 @property(nonatomic,strong)SDCycleScrollView * scrollView;
 
 @property(nonatomic,strong)NSMutableArray * animationButtons;
+
+@property(nonatomic,strong)YXHBangumiCollectionViewController * superVC;
 @end
 
 @implementation YXHCollectionHeaderView
@@ -102,7 +106,20 @@
 }
 
 - (void)changeTofollowBangumi:(UIButton *)sender {
-    NSLog(@"追番");
+    
+//    for (UIView* next = [self superview]; next; next = next.superview)
+//    {
+//        UIResponder* nextResponder = [next nextResponder];
+//        
+//        if ([nextResponder isKindOfClass:[YXHBangumiCollectionViewController class]])
+//        {
+//            self.superVC = (YXHBangumiCollectionViewController *)nextResponder;//MyViewController就是你要找的那个vc
+//            break;
+//        }
+//    }
+    
+    [self.superVC.navigationController pushViewController:[[LoginViewController alloc] init] animated:YES];
+    
 }
 - (void)changeToTimeList:(UIButton *)sender {
     NSLog(@"放送表");
@@ -111,5 +128,22 @@
     NSLog(@"索引");
 }
 
-
+- (YXHBangumiCollectionViewController *)superVC
+{
+    if (!_superVC)
+    {
+        for (UIView* next = [self superview]; next; next = next.superview)
+        {
+            UIResponder* nextResponder = [next nextResponder];
+            
+            if ([nextResponder isKindOfClass:[YXHBangumiCollectionViewController class]])
+            {
+                _superVC = (YXHBangumiCollectionViewController *)nextResponder;//MyViewController就是你要找的那个vc
+                break;
+            }
+        }
+    }
+    
+    return _superVC;
+}
 @end

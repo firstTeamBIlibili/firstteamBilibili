@@ -9,8 +9,14 @@
 #import "YXHBangumiDetailViewController.h"
 #import "YXHDetailHeader.h"
 #import "YXHDetailModel.h"
+#import "YXHDetailepisode.h"
+#import "YXHEpisodeTableViewCell.h"
+#import "YXHDetailTag.h"
+#import "YXHEvaluateTableViewCell.h"
+#import "YXHCommentModel.h"
+#import "YXHCommentTableViewCell.h"
 
-@interface YXHBangumiDetailViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface YXHBangumiDetailViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 
 @property(nonatomic,strong)AFHTTPSessionManager * manager;
 @property(nonatomic,strong)YXHDetailHeader * header;
@@ -24,7 +30,8 @@
 @property(nonatomic,strong)NSMutableArray * commentArray;  //评论
 @property(nonatomic,strong)NSMutableArray * recommendArray;  //番剧推荐
 @end
-
+static NSString * episodeCell = @"episodeCell";
+static NSString * evaluateCell = @"evaluateCell";
 static NSString * commentCell = @"commentCell";
 @implementation YXHBangumiDetailViewController
 
@@ -32,9 +39,21 @@ static NSString * commentCell = @"commentCell";
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = YES;
     
+    [self setNavigation];
+    
     [self setupTableView];
     
     [self requestData];
+}
+
+- (void)setNavigation
+{
+    self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor blackColor],NSFontAttributeName:[UIFont systemFontOfSize:16]};
+    
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"common_back"] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
 }
 
 - (AFHTTPSessionManager *)manager
@@ -56,6 +75,7 @@ static NSString * commentCell = @"commentCell";
 - (void)back
 {
     [self.navigationController popViewControllerAnimated:YES];
+    self.navigationController.navigationBar.hidden = NO;
 }
 
 - (void)requestData
@@ -66,13 +86,30 @@ static NSString * commentCell = @"commentCell";
         YXHDetailModel * model = [[YXHDetailModel alloc] init];
         [model setValuesForKeysWithDictionary:responseObject[@"result"]];
         weakSelf.model = model;
+        [weakSelf addTableViewHeader];  //添加表头
+        self.title = model.bangumi_title;  //设置标题
+        //选集数据
+        weakSelf.episodes = [YXHDetailepisode mj_objectArrayWithKeyValuesArray:model.episodes];
+        
+        //标签和简介数据
+        weakSelf.evaluate = model.evaluate;
+        weakSelf.tags = [YXHDetailTag mj_objectArrayWithKeyValuesArray:model.tags];
+        
         [weakSelf.tableView reloadData];
         
-        [weakSelf addTableViewHeader];
-        //NSLog(@"%@",model.episodes);
-        NSLog(@"%@",self.model);
+        //番剧数据请求成功后再请求评论数据,参数oid是番剧中的av_id
+        YXHDetailepisode * episode = self.episodes.firstObject;
+        NSString * commentUrl = [NSString stringWithFormat:@"http://api.bilibili.com/x/v2/reply?_device=iphone&_hwid=5fdaf2988e676bb9&_ulv=0&access_key=&appkey=27eb53fc9058f8c3&appver=4000&build=4000&oid=%@&platform=ios&pn=1&ps=20&sign=93a0e793ece42ee011aa7cf39255e424&sort=2&type=1",episode.av_id];
+        [weakSelf.manager GET:commentUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            NSArray * dataArray = responseObject[@"data"][@"replies"];
+            weakSelf.commentArray = [YXHCommentModel mj_objectArrayWithKeyValuesArray:dataArray];
+            //NSLog(@"%@",weakSelf.commentArray);
+            [weakSelf.tableView reloadData];
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+        }];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
+        self.navigationController.navigationBar.hidden = NO;
     }];
 }
 
@@ -88,17 +125,33 @@ static NSString * commentCell = @"commentCell";
     _tableView.dataSource = self;
     _tableView.backgroundColor = [[UIColor alloc] initWithWhite:0.9 alpha:1];
     _tableView.bounces = NO;
+    _tableView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:_tableView];
     
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:commentCell];
+    [_tableView registerClass:[YXHEpisodeTableViewCell class] forCellReuseIdentifier:episodeCell]; //注册选集cell
+    [_tableView registerClass:[YXHEvaluateTableViewCell class] forCellReuseIdentifier:evaluateCell]; //注册简介cell
+    
+    [_tableView registerNib:[UINib nibWithNibName:@"YXHCommentTableViewCell" bundle:nil] forCellReuseIdentifier:commentCell]; //注册评论cell
 }
 
 //添加表头
 - (void)addTableViewHeader
 {
     self.header.model = self.model;
-    NSLog(@"%@",self.model);
     self.tableView.tableHeaderView = self.header;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 2)
+    {
+        YXHCommentModel * model = self.commentArray[indexPath.row];
+        return model.cellHeight;
+    }
+    else
+    {
+        return 130;
+    }
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -113,17 +166,71 @@ static NSString * commentCell = @"commentCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.section == 0)
+    {
+        YXHEpisodeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:episodeCell forIndexPath:indexPath];
+        cell.selectionStyle =UITableViewCellSelectionStyleNone;
+        cell.backgroundColor = [[UIColor alloc] initWithWhite:0.9 alpha:1];
+        cell.episodes = self.episodes;
+        return cell;
+    }
+    
+    if (indexPath.section == 1)
+    {
+        YXHEvaluateTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:evaluateCell forIndexPath:indexPath];
+        cell.selectionStyle =UITableViewCellSelectionStyleNone;
+        cell.backgroundColor = [[UIColor alloc] initWithWhite:0.9 alpha:1];
+        cell.evaluate = self.evaluate;
+        cell.tags = self.tags;
+        return cell;
+    }
+    
     if (indexPath.section == 2)
     {
-        UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:commentCell forIndexPath:indexPath];
+        YXHCommentTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:commentCell forIndexPath:indexPath];
+        cell.selectionStyle =UITableViewCellSelectionStyleNone;
+        cell.backgroundColor = [[UIColor alloc] initWithWhite:0.9 alpha:1];
+        cell.model = self.commentArray[indexPath.row];
         return cell;
     }
-    else
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:commentCell forIndexPath:indexPath];
+    return cell;
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 2) return 40;
+    return 0;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (section == 2)
     {
-        UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:commentCell forIndexPath:indexPath];
-        return cell;
+        UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 40)];
+        UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(10, 20, 40, 20)];
+        label.font = [UIFont systemFontOfSize:14];
+        label.text = @"评论";
+        [view addSubview:label];
+        return view;
+    }
+    return [[UIView alloc] init];
+}
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    //NSLog(@"%f",scrollView.contentOffset.y);
+    if (scrollView.contentOffset.y == -20)
+    {
+        self.navigationController.navigationBar.hidden = YES;
+    }else
+    {
+        self.navigationController.navigationBar.hidden = NO;
+        self.navigationController.navigationBar.alpha = (scrollView.contentOffset.y + 20) / 64;
     }
 }
+
 
 
 @end

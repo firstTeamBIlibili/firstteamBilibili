@@ -40,6 +40,7 @@ static NSString * reuseId = @"superCell";
 
 - (void)setupTableView
 {
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"YXHSuperTableViewCell" bundle:nil] forCellReuseIdentifier:reuseId];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 }

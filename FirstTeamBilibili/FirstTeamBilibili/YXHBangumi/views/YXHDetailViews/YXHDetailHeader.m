@@ -24,7 +24,12 @@
 
 - (void)setModel:(YXHDetailModel *)model
 {
-    self.backgroundColor = [UIColor redColor];
+    //self.backgroundColor = [UIColor redColor];
+    [self.backgroundImage sd_setImageWithURL:[NSURL URLWithString:model.cover] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        UIVisualEffectView * effectView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
+        effectView.frame = CGRectMake(0, 0, WIDTH, 150);
+        [self.backgroundImage addSubview:effectView];
+    }];
     [self.coverImageView setRoundedImageViewWithUrl:model.cover];
     self.titleLabel.text = model.bangumi_title;
     

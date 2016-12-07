@@ -42,11 +42,14 @@ static NSString * const recommendCell = @"recommendCell";
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self setupNavgation];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    [self setupNavgation];
     
     [self setupCollectionView];
     

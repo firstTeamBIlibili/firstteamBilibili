@@ -24,10 +24,10 @@
 
 @implementation YXHBangumiListViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
     
     [self setupNavigation];
     
@@ -36,13 +36,14 @@
     [self setupScrollView];
     
     [self setupIndicatorView];
+    
 }
 
 //设置导航栏
 - (void)setupNavigation
 {
     //导航栏title
-    self.navigationController.navigationBar.barTintColor = [[UIColor alloc] initWithRed:255/256.0 green:85/256.0 blue:148/256.0 alpha:1];
+    self.navigationController.navigationBar.barTintColor = [[UIColor alloc] initWithRed:255/256.0 green:85/256.0 blue:148/256.0 alpha:0];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:16]};
     self.title = @"番剧";
     
@@ -51,12 +52,12 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"common_back"] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
     
     //右侧排序按钮
-    UIBarButtonItem * bar = [[UIBarButtonItem alloc] initWithTitle:@"默认" style:UIBarButtonItemStylePlain target:self action:nil];
-    [bar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
-    bar.enabled = NO;
-    UIBarButtonItem * bar1 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"common_downArrow"] style:UIBarButtonItemStylePlain target:self action:@selector(sort)];
-    bar1.imageInsets = UIEdgeInsetsMake(10, -20, 0, 15);
-    self.navigationItem.rightBarButtonItems = @[bar1,bar];
+//    UIBarButtonItem * bar = [[UIBarButtonItem alloc] initWithTitle:@"默认" style:UIBarButtonItemStylePlain target:self action:nil];
+//    [bar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
+//    bar.enabled = NO;
+//    UIBarButtonItem * bar1 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"common_downArrow"] style:UIBarButtonItemStylePlain target:self action:@selector(sort)];
+//    bar1.imageInsets = UIEdgeInsetsMake(10, -20, 0, 15);
+//    self.navigationItem.rightBarButtonItems = @[bar1,bar];
     
 }
 
@@ -99,6 +100,8 @@
 
 - (void)setupIndicatorView
 {
+    if (_indicatorView) return;
+    
     _indicatorView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, 35)];
     _indicatorView.backgroundColor = [[UIColor alloc] initWithRed:255/256.0 green:72/256.0 blue:148/256.0 alpha:0.79];
     [self.view addSubview:_indicatorView];
