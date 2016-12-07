@@ -289,6 +289,46 @@ respective headers for the terms of their individual licenses.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>https://www.wilddog.com/terms/sa</string>
+			<key>License</key>
+			<string>Copy right</string>
+			<key>Title</key>
+			<string>Wilddog</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2016 Wilddog</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>WilddogAuth</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2016 Wilddog</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>WilddogCore</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2016 Wilddog</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>WilddogSync</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>BSD License
 
 For Pop software

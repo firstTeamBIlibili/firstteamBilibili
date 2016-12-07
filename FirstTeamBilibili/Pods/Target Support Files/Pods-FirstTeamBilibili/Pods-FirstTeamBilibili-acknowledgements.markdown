@@ -222,6 +222,22 @@ including Freepik Icons. Please consult their
 respective headers for the terms of their individual licenses.
 
 
+## Wilddog
+
+https://www.wilddog.com/terms/sa
+
+## WilddogAuth
+
+Copyright 2016 Wilddog
+
+## WilddogCore
+
+Copyright 2016 Wilddog
+
+## WilddogSync
+
+Copyright 2016 Wilddog
+
 ## pop
 
 BSD License

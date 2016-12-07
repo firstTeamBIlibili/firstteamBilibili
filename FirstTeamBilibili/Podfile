@@ -12,6 +12,7 @@ pod "pop"
 pod 'NJKWebViewProgress'
 pod 'Masonry'
 pod "SDCycleScrollView"
+pod 'Wilddog'
 
 end
 

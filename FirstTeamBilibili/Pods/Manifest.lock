@@ -30,6 +30,26 @@ PODS:
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - SVProgressHUD (2.0.3)
+  - Wilddog (2.0.3):
+    - Wilddog/Auth (= 2.0.3)
+    - Wilddog/Core (= 2.0.3)
+    - Wilddog/Public (= 2.0.3)
+    - Wilddog/Sync (= 2.0.3)
+  - Wilddog/Auth (2.0.3):
+    - Wilddog/Public
+    - WilddogAuth (~> 2.0.1)
+  - Wilddog/Core (2.0.3):
+    - Wilddog/Public
+  - Wilddog/Public (2.0.3):
+    - WilddogCore (~> 2.0.1)
+  - Wilddog/Sync (2.0.3):
+    - Wilddog/Public
+    - WilddogSync (~> 2.0.1)
+  - WilddogAuth (2.0.3):
+    - WilddogCore (~> 2.0.1)
+  - WilddogCore (2.0.2)
+  - WilddogSync (2.0.3):
+    - WilddogCore (~> 2.0.1)
 
 DEPENDENCIES:
   - AFNetworking
@@ -42,6 +62,7 @@ DEPENDENCIES:
   - SDCycleScrollView
   - SDWebImage
   - SVProgressHUD
+  - Wilddog
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -54,7 +75,11 @@ SPEC CHECKSUMS:
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  Wilddog: 89a47c4cbd5482fa05a32e9f0597b411567b30a0
+  WilddogAuth: ba5fae0479a98427ffe8704711e86c660ebed16c
+  WilddogCore: 965e62942dc17c46d57e0e100de101d7f13de779
+  WilddogSync: c556cf81807d693abdab39a4d6b3572e326918d6
 
-PODFILE CHECKSUM: 99d0d68028d507c0fbb0a22c0afec03de9b03839
+PODFILE CHECKSUM: 2bc6a473adcb0fd341e19e03a9286dcebd14ada1
 
 COCOAPODS: 1.1.1

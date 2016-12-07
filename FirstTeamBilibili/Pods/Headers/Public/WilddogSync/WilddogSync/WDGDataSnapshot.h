@@ -1,0 +1,1 @@
+../../../../WilddogSync/WilddogSync.framework/Headers/WDGDataSnapshot.h

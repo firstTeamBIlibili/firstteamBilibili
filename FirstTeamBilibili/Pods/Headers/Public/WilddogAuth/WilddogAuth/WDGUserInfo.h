@@ -1,0 +1,1 @@
+../../../../WilddogAuth/WilddogAuth.framework/Headers/WDGUserInfo.h

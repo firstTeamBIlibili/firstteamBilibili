@@ -14,6 +14,7 @@
 
 @implementation NSObject (MJRefresh)
 
+
 + (void)exchangeInstanceMethod1:(SEL)method1 method2:(SEL)method2
 {
     method_exchangeImplementations(class_getInstanceMethod(self, method1), class_getInstanceMethod(self, method2));

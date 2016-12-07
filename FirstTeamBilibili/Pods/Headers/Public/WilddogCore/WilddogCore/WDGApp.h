@@ -1,0 +1,1 @@
+../../../../WilddogCore/WilddogCore.framework/Headers/WDGApp.h
