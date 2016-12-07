@@ -18,7 +18,6 @@
     
     
     
-    
     DetialLiveViewController * detialVC = [[DetialLiveViewController alloc] init];
     
     detialVC.dataArr = self.modelArr;
