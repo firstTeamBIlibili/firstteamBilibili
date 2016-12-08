@@ -11,6 +11,7 @@
 #import "YXHBangumiListViewController.h"
 #import "LoginViewController.h"
 #import "YXHBangumiCollectionViewController.h"
+#import "YXHTimeListViewController.h"
 
 @interface YXHCollectionHeaderView()
 
@@ -107,27 +108,21 @@
 
 - (void)changeTofollowBangumi:(UIButton *)sender {
     
-//    for (UIView* next = [self superview]; next; next = next.superview)
-//    {
-//        UIResponder* nextResponder = [next nextResponder];
-//        
-//        if ([nextResponder isKindOfClass:[YXHBangumiCollectionViewController class]])
-//        {
-//            self.superVC = (YXHBangumiCollectionViewController *)nextResponder;//MyViewController就是你要找的那个vc
-//            break;
-//        }
-//    }
     
     [self.superVC.navigationController pushViewController:[[LoginViewController alloc] init] animated:YES];
     
 }
+
 - (void)changeToTimeList:(UIButton *)sender {
-    NSLog(@"放送表");
+    YXHTimeListViewController * timeVC = [[YXHTimeListViewController alloc] init];
+    [self.superVC.navigationController pushViewController:timeVC animated:YES];
 }
 - (void)changeToBangumiIndex:(UIButton *)sender {
     NSLog(@"索引");
 }
 
+
+//寻找控件所在的视图控制器
 - (YXHBangumiCollectionViewController *)superVC
 {
     if (!_superVC)
@@ -138,7 +133,7 @@
             
             if ([nextResponder isKindOfClass:[YXHBangumiCollectionViewController class]])
             {
-                _superVC = (YXHBangumiCollectionViewController *)nextResponder;//MyViewController就是你要找的那个vc
+                _superVC = (YXHBangumiCollectionViewController *)nextResponder;
                 break;
             }
         }
@@ -146,4 +141,5 @@
     
     return _superVC;
 }
+
 @end

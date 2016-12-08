@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YXHTimeListCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="213"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="191" height="213"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eS6-PX-xCH">
+                        <rect key="frame" x="0.0" y="0.0" width="191" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="MRI-7Q-EGM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNn-Dq-DMn">
+                        <rect key="frame" x="40" y="94" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bangumi_timeline_alarm.png" translatesAutoresizingMaskIntoConstraints="NO" id="oPX-xL-vvT">
+                        <rect key="frame" x="10" y="90" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="3TR-zw-DhO"/>
+                            <constraint firstAttribute="height" constant="20" id="EJV-jb-BjO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tm5-gh-git">
+                        <rect key="frame" x="10" y="130" width="171" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="yxh-3f-ZHV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PM7-Fv-50f">
+                        <rect key="frame" x="10" y="152" width="171" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PM7-Fv-50f" secondAttribute="trailing" constant="10" id="2zc-fL-noe"/>
+                <constraint firstItem="PM7-Fv-50f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="3XP-gm-e6s"/>
+                <constraint firstItem="eS6-PX-xCH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DKF-Mi-YWt"/>
+                <constraint firstItem="eS6-PX-xCH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N8B-Sv-P41"/>
+                <constraint firstItem="oPX-xL-vvT" firstAttribute="leading" secondItem="eS6-PX-xCH" secondAttribute="leading" constant="10" id="WXq-8a-DLH"/>
+                <constraint firstItem="eS6-PX-xCH" firstAttribute="bottom" secondItem="oPX-xL-vvT" secondAttribute="bottom" constant="10" id="Y1e-bk-FBl"/>
+                <constraint firstItem="CNn-Dq-DMn" firstAttribute="leading" secondItem="oPX-xL-vvT" secondAttribute="trailing" constant="10" id="YYA-7H-2Ky"/>
+                <constraint firstItem="PM7-Fv-50f" firstAttribute="top" secondItem="Tm5-gh-git" secondAttribute="bottom" constant="5" id="dg7-ro-XU4"/>
+                <constraint firstAttribute="trailing" secondItem="Tm5-gh-git" secondAttribute="trailing" constant="10" id="eEw-j2-QS6"/>
+                <constraint firstItem="Tm5-gh-git" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="gpM-Bh-sx9"/>
+                <constraint firstAttribute="trailing" secondItem="eS6-PX-xCH" secondAttribute="trailing" id="n5W-WV-d9v"/>
+                <constraint firstItem="Tm5-gh-git" firstAttribute="top" secondItem="eS6-PX-xCH" secondAttribute="bottom" constant="10" id="pD7-UC-P7U"/>
+                <constraint firstItem="eS6-PX-xCH" firstAttribute="bottom" secondItem="CNn-Dq-DMn" secondAttribute="bottom" constant="10" id="xoW-Ha-srP"/>
+            </constraints>
+            <size key="customSize" width="191" height="213"/>
+            <connections>
+                <outlet property="coverImageHeight" destination="MRI-7Q-EGM" id="a76-gN-eJm"/>
+                <outlet property="coverImageView" destination="eS6-PX-xCH" id="xKZ-Ut-9At"/>
+                <outlet property="indexLabel" destination="PM7-Fv-50f" id="G1J-3w-zNi"/>
+                <outlet property="ontimeLabel" destination="CNn-Dq-DMn" id="hdc-nF-YhU"/>
+                <outlet property="titleLabel" destination="Tm5-gh-git" id="B40-mh-mjT"/>
+            </connections>
+            <point key="canvasLocation" x="-176.5" y="-16.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bangumi_timeline_alarm.png" width="16" height="16"/>
+    </resources>
+</document>

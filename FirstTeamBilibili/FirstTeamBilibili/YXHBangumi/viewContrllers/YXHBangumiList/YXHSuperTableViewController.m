@@ -112,4 +112,9 @@ static NSString * reuseId = @"superCell";
     return 40;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
 @end

@@ -135,6 +135,33 @@
 		898B02EE1DF82722005FC512 /* YXHSuperSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898B02781DF82722005FC512 /* YXHSuperSectionHeaderView.xib */; };
 		898B02EF1DF82722005FC512 /* YXHSuperTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 898B027A1DF82722005FC512 /* YXHSuperTableViewCell.m */; };
 		898B02F01DF82722005FC512 /* YXHSuperTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898B027B1DF82722005FC512 /* YXHSuperTableViewCell.xib */; };
+		89906A7D1DF8F2EB00DBE041 /* YXHPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89906A7B1DF8F2EB00DBE041 /* YXHPlayViewController.m */; };
+		89906A7E1DF8F2EB00DBE041 /* YXHPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89906A7C1DF8F2EB00DBE041 /* YXHPlayViewController.xib */; };
+		89906A8D1DF8F46D00DBE041 /* icnav_back_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906A8B1DF8F46D00DBE041 /* icnav_back_dark.png */; };
+		89906A8E1DF8F46D00DBE041 /* icnav_back_dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906A8C1DF8F46D00DBE041 /* icnav_back_dark@2x.png */; };
+		89906AD01DF9090600DBE041 /* NSDate+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = 89906ACE1DF9090600DBE041 /* NSDate+Time.m */; };
+		89906AD31DF9286700DBE041 /* YXHTimeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89906AD21DF9286700DBE041 /* YXHTimeListViewController.m */; };
+		89906AD61DF92EFE00DBE041 /* YXHTimeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89906AD51DF92EFE00DBE041 /* YXHTimeListModel.m */; };
+		89906ADA1DF9401900DBE041 /* YXHTimeListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89906AD81DF9401900DBE041 /* YXHTimeListCollectionViewCell.m */; };
+		89906ADB1DF9401900DBE041 /* YXHTimeListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89906AD91DF9401900DBE041 /* YXHTimeListCollectionViewCell.xib */; };
+		89906AED1DF9464800DBE041 /* bangumi_timeline_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906ADD1DF9464800DBE041 /* bangumi_timeline_1@2x.png */; };
+		89906AEE1DF9464800DBE041 /* bangumi_timeline_1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906ADE1DF9464800DBE041 /* bangumi_timeline_1@3x.png */; };
+		89906AEF1DF9464800DBE041 /* bangumi_timeline_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906ADF1DF9464800DBE041 /* bangumi_timeline_2@2x.png */; };
+		89906AF01DF9464800DBE041 /* bangumi_timeline_2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906AE01DF9464800DBE041 /* bangumi_timeline_2@3x.png */; };
+		89906AF11DF9464800DBE041 /* bangumi_timeline_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906AE11DF9464800DBE041 /* bangumi_timeline_3@2x.png */; };
+		89906AF21DF9464800DBE041 /* bangumi_timeline_3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906AE21DF9464800DBE041 /* bangumi_timeline_3@3x.png */; };
+		89906AF31DF9464800DBE041 /* bangumi_timeline_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906AE31DF9464800DBE041 /* bangumi_timeline_4@2x.png */; };
+		89906AF41DF9464800DBE041 /* bangumi_timeline_4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906AE41DF9464800DBE041 /* bangumi_timeline_4@3x.png */; };
+		89906AF51DF9464800DBE041 /* bangumi_timeline_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906AE51DF9464800DBE041 /* bangumi_timeline_5@2x.png */; };
+		89906AF61DF9464800DBE041 /* bangumi_timeline_5@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906AE61DF9464800DBE041 /* bangumi_timeline_5@3x.png */; };
+		89906AF71DF9464800DBE041 /* bangumi_timeline_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906AE71DF9464800DBE041 /* bangumi_timeline_6@2x.png */; };
+		89906AF81DF9464800DBE041 /* bangumi_timeline_6@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906AE81DF9464800DBE041 /* bangumi_timeline_6@3x.png */; };
+		89906AF91DF9464800DBE041 /* bangumi_timeline_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906AE91DF9464800DBE041 /* bangumi_timeline_7@2x.png */; };
+		89906AFA1DF9464800DBE041 /* bangumi_timeline_7@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906AEA1DF9464800DBE041 /* bangumi_timeline_7@3x.png */; };
+		89906AFB1DF9464800DBE041 /* bangumi_timeline_alarm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906AEB1DF9464800DBE041 /* bangumi_timeline_alarm@2x.png */; };
+		89906AFC1DF9464800DBE041 /* bangumi_timeline_alarm@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89906AEC1DF9464800DBE041 /* bangumi_timeline_alarm@3x.png */; };
+		89906B001DF952F800DBE041 /* YXHTimeListSectionHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89906AFE1DF952F800DBE041 /* YXHTimeListSectionHeaderCollectionReusableView.m */; };
+		89906B011DF952F800DBE041 /* YXHTimeListSectionHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89906AFF1DF952F800DBE041 /* YXHTimeListSectionHeaderCollectionReusableView.xib */; };
 		C59C28AF1DF6463D002AD225 /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C59C28AA1DF6463D002AD225 /* CollectionReusableView.m */; };
 		C59C28B01DF6463D002AD225 /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C59C28AB1DF6463D002AD225 /* CollectionReusableView.xib */; };
 		C59C28B81DF64665002AD225 /* collectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59C28B61DF64665002AD225 /* collectionModel.m */; };
@@ -385,6 +412,39 @@
 		898B02791DF82722005FC512 /* YXHSuperTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHSuperTableViewCell.h; sourceTree = "<group>"; };
 		898B027A1DF82722005FC512 /* YXHSuperTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHSuperTableViewCell.m; sourceTree = "<group>"; };
 		898B027B1DF82722005FC512 /* YXHSuperTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXHSuperTableViewCell.xib; sourceTree = "<group>"; };
+		89906A7A1DF8F2EB00DBE041 /* YXHPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHPlayViewController.h; sourceTree = "<group>"; };
+		89906A7B1DF8F2EB00DBE041 /* YXHPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHPlayViewController.m; sourceTree = "<group>"; };
+		89906A7C1DF8F2EB00DBE041 /* YXHPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXHPlayViewController.xib; sourceTree = "<group>"; };
+		89906A8B1DF8F46D00DBE041 /* icnav_back_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icnav_back_dark.png; sourceTree = "<group>"; };
+		89906A8C1DF8F46D00DBE041 /* icnav_back_dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icnav_back_dark@2x.png"; sourceTree = "<group>"; };
+		89906ACE1DF9090600DBE041 /* NSDate+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Time.m"; sourceTree = "<group>"; };
+		89906ACF1DF9090600DBE041 /* NSDate+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Time.h"; sourceTree = "<group>"; };
+		89906AD11DF9286700DBE041 /* YXHTimeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHTimeListViewController.h; sourceTree = "<group>"; };
+		89906AD21DF9286700DBE041 /* YXHTimeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHTimeListViewController.m; sourceTree = "<group>"; };
+		89906AD41DF92EFE00DBE041 /* YXHTimeListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHTimeListModel.h; sourceTree = "<group>"; };
+		89906AD51DF92EFE00DBE041 /* YXHTimeListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHTimeListModel.m; sourceTree = "<group>"; };
+		89906AD71DF9401900DBE041 /* YXHTimeListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHTimeListCollectionViewCell.h; sourceTree = "<group>"; };
+		89906AD81DF9401900DBE041 /* YXHTimeListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHTimeListCollectionViewCell.m; sourceTree = "<group>"; };
+		89906AD91DF9401900DBE041 /* YXHTimeListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXHTimeListCollectionViewCell.xib; sourceTree = "<group>"; };
+		89906ADD1DF9464800DBE041 /* bangumi_timeline_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_1@2x.png"; sourceTree = "<group>"; };
+		89906ADE1DF9464800DBE041 /* bangumi_timeline_1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_1@3x.png"; sourceTree = "<group>"; };
+		89906ADF1DF9464800DBE041 /* bangumi_timeline_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_2@2x.png"; sourceTree = "<group>"; };
+		89906AE01DF9464800DBE041 /* bangumi_timeline_2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_2@3x.png"; sourceTree = "<group>"; };
+		89906AE11DF9464800DBE041 /* bangumi_timeline_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_3@2x.png"; sourceTree = "<group>"; };
+		89906AE21DF9464800DBE041 /* bangumi_timeline_3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_3@3x.png"; sourceTree = "<group>"; };
+		89906AE31DF9464800DBE041 /* bangumi_timeline_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_4@2x.png"; sourceTree = "<group>"; };
+		89906AE41DF9464800DBE041 /* bangumi_timeline_4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_4@3x.png"; sourceTree = "<group>"; };
+		89906AE51DF9464800DBE041 /* bangumi_timeline_5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_5@2x.png"; sourceTree = "<group>"; };
+		89906AE61DF9464800DBE041 /* bangumi_timeline_5@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_5@3x.png"; sourceTree = "<group>"; };
+		89906AE71DF9464800DBE041 /* bangumi_timeline_6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_6@2x.png"; sourceTree = "<group>"; };
+		89906AE81DF9464800DBE041 /* bangumi_timeline_6@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_6@3x.png"; sourceTree = "<group>"; };
+		89906AE91DF9464800DBE041 /* bangumi_timeline_7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_7@2x.png"; sourceTree = "<group>"; };
+		89906AEA1DF9464800DBE041 /* bangumi_timeline_7@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_7@3x.png"; sourceTree = "<group>"; };
+		89906AEB1DF9464800DBE041 /* bangumi_timeline_alarm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_alarm@2x.png"; sourceTree = "<group>"; };
+		89906AEC1DF9464800DBE041 /* bangumi_timeline_alarm@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangumi_timeline_alarm@3x.png"; sourceTree = "<group>"; };
+		89906AFD1DF952F800DBE041 /* YXHTimeListSectionHeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHTimeListSectionHeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		89906AFE1DF952F800DBE041 /* YXHTimeListSectionHeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHTimeListSectionHeaderCollectionReusableView.m; sourceTree = "<group>"; };
+		89906AFF1DF952F800DBE041 /* YXHTimeListSectionHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXHTimeListSectionHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		9E400DFEDAAEECAF7E3B66D6 /* Pods-FirstTeamBilibili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstTeamBilibili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstTeamBilibili/Pods-FirstTeamBilibili.debug.xcconfig"; sourceTree = "<group>"; };
 		C59C28A91DF6463D002AD225 /* CollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionReusableView.h; sourceTree = "<group>"; };
 		C59C28AA1DF6463D002AD225 /* CollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableView.m; sourceTree = "<group>"; };
@@ -617,6 +677,8 @@
 				898B01EA1DF82721005FC512 /* YXHRecommendModel.m */,
 				898B01EB1DF82721005FC512 /* YXHSuperModel.h */,
 				898B01EC1DF82721005FC512 /* YXHSuperModel.m */,
+				89906AD41DF92EFE00DBE041 /* YXHTimeListModel.h */,
+				89906AD51DF92EFE00DBE041 /* YXHTimeListModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -649,6 +711,7 @@
 		898B01EE1DF82721005FC512 /* YXHResource */ = {
 			isa = PBXGroup;
 			children = (
+				89906ADC1DF9464800DBE041 /* YXHTimeListPic */,
 				898B01EF1DF82721005FC512 /* YXHBangumiListPic */,
 				898B01FC1DF82722005FC512 /* YXHCollectionHeader */,
 				898B020B1DF82722005FC512 /* YXHDetailPic */,
@@ -707,6 +770,8 @@
 				898B02101DF82722005FC512 /* misc_commentPink.png */,
 				898B02111DF82722005FC512 /* misc_commentPink@2x.png */,
 				898B02121DF82722005FC512 /* misc_commentPink@3x.png */,
+				89906A8B1DF8F46D00DBE041 /* icnav_back_dark.png */,
+				89906A8C1DF8F46D00DBE041 /* icnav_back_dark@2x.png */,
 				898B02131DF82722005FC512 /* misc_level_whiteLv0.png */,
 				898B02141DF82722005FC512 /* misc_level_whiteLv0@2x.png */,
 				898B02151DF82722005FC512 /* misc_level_whiteLv0@3x.png */,
@@ -767,6 +832,8 @@
 		898B02421DF82722005FC512 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				89906ACE1DF9090600DBE041 /* NSDate+Time.m */,
+				89906ACF1DF9090600DBE041 /* NSDate+Time.h */,
 				898B02431DF82722005FC512 /* AnimationButton.h */,
 				898B02441DF82722005FC512 /* AnimationButton.m */,
 				898B02451DF82722005FC512 /* UIImage+YXHCycle.h */,
@@ -788,9 +855,14 @@
 				898B024F1DF82722005FC512 /* YXHBangumiCollectionViewController.m */,
 				898B02501DF82722005FC512 /* YXHBangumiDetailViewController.h */,
 				898B02511DF82722005FC512 /* YXHBangumiDetailViewController.m */,
+				89906A7A1DF8F2EB00DBE041 /* YXHPlayViewController.h */,
+				89906A7B1DF8F2EB00DBE041 /* YXHPlayViewController.m */,
+				89906A7C1DF8F2EB00DBE041 /* YXHPlayViewController.xib */,
 				898B02521DF82722005FC512 /* YXHBangumiList */,
 				898B025D1DF82722005FC512 /* YXHBangumiListViewController.h */,
 				898B025E1DF82722005FC512 /* YXHBangumiListViewController.m */,
+				89906AD11DF9286700DBE041 /* YXHTimeListViewController.h */,
+				89906AD21DF9286700DBE041 /* YXHTimeListViewController.m */,
 			);
 			path = viewContrllers;
 			sourceTree = "<group>";
@@ -833,6 +905,12 @@
 				898B02791DF82722005FC512 /* YXHSuperTableViewCell.h */,
 				898B027A1DF82722005FC512 /* YXHSuperTableViewCell.m */,
 				898B027B1DF82722005FC512 /* YXHSuperTableViewCell.xib */,
+				89906AD71DF9401900DBE041 /* YXHTimeListCollectionViewCell.h */,
+				89906AD81DF9401900DBE041 /* YXHTimeListCollectionViewCell.m */,
+				89906AD91DF9401900DBE041 /* YXHTimeListCollectionViewCell.xib */,
+				89906AFD1DF952F800DBE041 /* YXHTimeListSectionHeaderCollectionReusableView.h */,
+				89906AFE1DF952F800DBE041 /* YXHTimeListSectionHeaderCollectionReusableView.m */,
+				89906AFF1DF952F800DBE041 /* YXHTimeListSectionHeaderCollectionReusableView.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -852,6 +930,29 @@
 				898B026C1DF82722005FC512 /* YXHEvaluateTableViewCell.m */,
 			);
 			path = YXHDetailViews;
+			sourceTree = "<group>";
+		};
+		89906ADC1DF9464800DBE041 /* YXHTimeListPic */ = {
+			isa = PBXGroup;
+			children = (
+				89906ADD1DF9464800DBE041 /* bangumi_timeline_1@2x.png */,
+				89906ADE1DF9464800DBE041 /* bangumi_timeline_1@3x.png */,
+				89906ADF1DF9464800DBE041 /* bangumi_timeline_2@2x.png */,
+				89906AE01DF9464800DBE041 /* bangumi_timeline_2@3x.png */,
+				89906AE11DF9464800DBE041 /* bangumi_timeline_3@2x.png */,
+				89906AE21DF9464800DBE041 /* bangumi_timeline_3@3x.png */,
+				89906AE31DF9464800DBE041 /* bangumi_timeline_4@2x.png */,
+				89906AE41DF9464800DBE041 /* bangumi_timeline_4@3x.png */,
+				89906AE51DF9464800DBE041 /* bangumi_timeline_5@2x.png */,
+				89906AE61DF9464800DBE041 /* bangumi_timeline_5@3x.png */,
+				89906AE71DF9464800DBE041 /* bangumi_timeline_6@2x.png */,
+				89906AE81DF9464800DBE041 /* bangumi_timeline_6@3x.png */,
+				89906AE91DF9464800DBE041 /* bangumi_timeline_7@2x.png */,
+				89906AEA1DF9464800DBE041 /* bangumi_timeline_7@3x.png */,
+				89906AEB1DF9464800DBE041 /* bangumi_timeline_alarm@2x.png */,
+				89906AEC1DF9464800DBE041 /* bangumi_timeline_alarm@3x.png */,
+			);
+			path = YXHTimeListPic;
 			sourceTree = "<group>";
 		};
 		AA766C11A1005743CBF1ECAB /* Frameworks */ = {
@@ -1123,6 +1224,7 @@
 				898B02861DF82722005FC512 /* common_back@3x.png in Resources */,
 				EBF0D9971DF6E99900265D0A /* 网络游戏.png in Resources */,
 				898B02CB1DF82722005FC512 /* new@3x.png in Resources */,
+				89906AFC1DF9464800DBE041 /* bangumi_timeline_alarm@3x.png in Resources */,
 				C59C28B01DF6463D002AD225 /* CollectionReusableView.xib in Resources */,
 				EBF0D9871DF6E99900265D0A /* 单机联机.png in Resources */,
 				898B02BB1DF82722005FC512 /* misc_level_whiteLv7@2x.png in Resources */,
@@ -1131,15 +1233,19 @@
 				C59C28DB1DF64745002AD225 /* 27.jpg in Resources */,
 				898B02CF1DF82722005FC512 /* home_bangumi_tableHead_bangumiRecommend@3x~iphone.png in Resources */,
 				898B02891DF82722005FC512 /* common_downArrow@3x.png in Resources */,
+				89906AEE1DF9464800DBE041 /* bangumi_timeline_1@3x.png in Resources */,
 				C59C28D51DF64745002AD225 /* 21.png in Resources */,
 				898B02CE1DF82722005FC512 /* home_bangumi_tableHead_bangumiRecommend@2x~iphone.png in Resources */,
 				898B02C41DF82722005FC512 /* misc_like_ico@2x.png in Resources */,
 				898B02981DF82722005FC512 /* home_region_icon_153@2x.png in Resources */,
+				89906AF41DF9464800DBE041 /* bangumi_timeline_4@3x.png in Resources */,
+				89906A8D1DF8F46D00DBE041 /* icnav_back_dark.png in Resources */,
 				EBF0D98F1DF6E99900265D0A /* 放映厅.png in Resources */,
 				898B02D11DF82722005FC512 /* season_summer_icon@2x.png in Resources */,
 				898B02B31DF82722005FC512 /* misc_level_whiteLv4@3x.png in Resources */,
 				EBF0D9A01DF6E99900265D0A /* LiveCollectionViewCell.xib in Resources */,
 				898B02881DF82722005FC512 /* common_downArrow@2x.png in Resources */,
+				89906AF91DF9464800DBE041 /* bangumi_timeline_7@2x.png in Resources */,
 				EBF0D9A51DF6E99900265D0A /* LoginViewController.xib in Resources */,
 				898B02AC1DF82722005FC512 /* misc_level_whiteLv2@2x.png in Resources */,
 				EBF0D98E1DF6E99900265D0A /* 推荐.jpg in Resources */,
@@ -1154,8 +1260,11 @@
 				898B02871DF82722005FC512 /* common_downArrow.png in Resources */,
 				C59C28DA1DF64745002AD225 /* 26.jpg in Resources */,
 				898B02851DF82722005FC512 /* common_back@2x.png in Resources */,
+				89906A8E1DF8F46D00DBE041 /* icnav_back_dark@2x.png in Resources */,
+				89906AFB1DF9464800DBE041 /* bangumi_timeline_alarm@2x.png in Resources */,
 				898B02911DF82722005FC512 /* home_bangumi_tableHead_followIcon@3x~iphone.png in Resources */,
 				EBF0D98D1DF6E99900265D0A /* 手游直播.png in Resources */,
+				89906ADB1DF9401900DBE041 /* YXHTimeListCollectionViewCell.xib in Resources */,
 				EBF0D9951DF6E99900265D0A /* 直播.jpg in Resources */,
 				898B02CC1DF82722005FC512 /* bangumi_unfinished.png in Resources */,
 				890D26311DF00BC9004B3A0E /* LaunchScreen.storyboard in Resources */,
@@ -1183,12 +1292,16 @@
 				EBF0D9981DF6E99900265D0A /* 萌宅推荐.png in Resources */,
 				898B02AA1DF82722005FC512 /* misc_level_whiteLv1@3x.png in Resources */,
 				898B02971DF82722005FC512 /* home_region_icon_152@3x.png in Resources */,
+				89906AFA1DF9464800DBE041 /* bangumi_timeline_7@3x.png in Resources */,
 				890D26751DF01703004B3A0E /* Assets.xcassets in Resources */,
 				EBF0D9901DF6E99900265D0A /* 滑稽.jpg in Resources */,
+				89906AF81DF9464800DBE041 /* bangumi_timeline_6@3x.png in Resources */,
 				898B02A91DF82722005FC512 /* misc_level_whiteLv1@2x.png in Resources */,
+				89906AF61DF9464800DBE041 /* bangumi_timeline_5@3x.png in Resources */,
 				C59C29E11DF6C82A002AD225 /* 弹幕量.png in Resources */,
 				C59C28D61DF64745002AD225 /* 22.png in Resources */,
 				898B02C11DF82722005FC512 /* misc_level_whiteLv9@2x.png in Resources */,
+				89906AF21DF9464800DBE041 /* bangumi_timeline_3@3x.png in Resources */,
 				898B02A51DF82722005FC512 /* misc_level_whiteLv0.png in Resources */,
 				C59C29E01DF6C82A002AD225 /* 播放量.png in Resources */,
 				EBF0D9921DF6E99900265D0A /* 用户名.jpg in Resources */,
@@ -1202,9 +1315,12 @@
 				898B02BE1DF82722005FC512 /* misc_level_whiteLv8@2x.png in Resources */,
 				898B028C1DF82722005FC512 /* hd_home_new_region@3x.png in Resources */,
 				898B02CD1DF82722005FC512 /* bangumi_unfinished@2x.png in Resources */,
+				89906AF11DF9464800DBE041 /* bangumi_timeline_3@2x.png in Resources */,
 				898B02F01DF82722005FC512 /* YXHSuperTableViewCell.xib in Resources */,
 				EBF0D99E1DF6E99900265D0A /* IWantToLiveView.xib in Resources */,
 				898B02A81DF82722005FC512 /* misc_level_whiteLv1.png in Resources */,
+				89906AED1DF9464800DBE041 /* bangumi_timeline_1@2x.png in Resources */,
+				89906AF51DF9464800DBE041 /* bangumi_timeline_5@2x.png in Resources */,
 				898B02961DF82722005FC512 /* home_region_icon_152@2x.png in Resources */,
 				898B02E21DF82722005FC512 /* YXHCommentTableViewCell.xib in Resources */,
 				898B02B71DF82722005FC512 /* misc_level_whiteLv6.png in Resources */,
@@ -1223,24 +1339,30 @@
 				C59C28CB1DF64745002AD225 /* 11.png in Resources */,
 				898B02B01DF82722005FC512 /* misc_level_whiteLv3@3x.png in Resources */,
 				898B02E41DF82722005FC512 /* YXHDetailHeader.xib in Resources */,
+				89906AF01DF9464800DBE041 /* bangumi_timeline_2@3x.png in Resources */,
 				C59C28D21DF64745002AD225 /* 18.png in Resources */,
 				898B029A1DF82722005FC512 /* home_region_icon_32@2x.png in Resources */,
 				898B02921DF82722005FC512 /* home_bangumi_tableHead_indexIcon@2x~iphone.png in Resources */,
 				898B02A01DF82722005FC512 /* common_more@3x.png in Resources */,
+				89906A7E1DF8F2EB00DBE041 /* YXHPlayViewController.xib in Resources */,
 				898B028F1DF82722005FC512 /* hd_home_recommend@3x.png in Resources */,
 				898B02941DF82722005FC512 /* home_bangumi_tableHead_week3@2x~iphone.png in Resources */,
 				C59C28D01DF64745002AD225 /* 16.png in Resources */,
 				898B029C1DF82722005FC512 /* home_region_icon_33@2x.png in Resources */,
 				898B02D01DF82722005FC512 /* season_summer_icon.png in Resources */,
 				890D262C1DF00BC9004B3A0E /* Main.storyboard in Resources */,
+				89906B011DF952F800DBE041 /* YXHTimeListSectionHeaderCollectionReusableView.xib in Resources */,
 				EBF0D9941DF6E99900265D0A /* 番剧.jpeg in Resources */,
+				89906AF31DF9464800DBE041 /* bangumi_timeline_4@2x.png in Resources */,
 				898B02A21DF82722005FC512 /* misc_commentPink.png in Resources */,
 				EBF0D9961DF6E99900265D0A /* 绘画专区.png in Resources */,
 				898B02AD1DF82722005FC512 /* misc_level_whiteLv2@3x.png in Resources */,
 				898B02BF1DF82722005FC512 /* misc_level_whiteLv8@3x.png in Resources */,
+				89906AEF1DF9464800DBE041 /* bangumi_timeline_2@2x.png in Resources */,
 				EBF0D9931DF6E99900265D0A /* 电子竞技.png in Resources */,
 				EBF0D99A1DF6E99900265D0A /* 闭眼.jpg in Resources */,
 				898B02C71DF82722005FC512 /* misc_like_s_ico@2x.png in Resources */,
+				89906AF71DF9464800DBE041 /* bangumi_timeline_6@2x.png in Resources */,
 				898B028B1DF82722005FC512 /* hd_home_new_region@2x.png in Resources */,
 				898B02991DF82722005FC512 /* home_region_icon_153@3x.png in Resources */,
 				898B02901DF82722005FC512 /* home_bangumi_tableHead_followIcon@2x~iphone.png in Resources */,
@@ -1326,6 +1448,7 @@
 				898B02ED1DF82722005FC512 /* YXHSuperSectionHeaderView.m in Sources */,
 				898B02DD1DF82722005FC512 /* YXHSuperTableViewController.m in Sources */,
 				C59C28AF1DF6463D002AD225 /* CollectionReusableView.m in Sources */,
+				89906ADA1DF9401900DBE041 /* YXHTimeListCollectionViewCell.m in Sources */,
 				898B02EF1DF82722005FC512 /* YXHSuperTableViewCell.m in Sources */,
 				EBF0D9A21DF6E99900265D0A /* DetialLiveViewController.m in Sources */,
 				EBF0D9A11DF6E99900265D0A /* BannerViewController.m in Sources */,
@@ -1339,10 +1462,12 @@
 				898B02801DF82722005FC512 /* YXHDetailTag.m in Sources */,
 				898B02821DF82722005FC512 /* YXHRecommendModel.m in Sources */,
 				898B02D31DF82722005FC512 /* AnimationButton.m in Sources */,
+				89906B001DF952F800DBE041 /* YXHTimeListSectionHeaderCollectionReusableView.m in Sources */,
 				898B02E01DF82722005FC512 /* YXHCollectionHeaderView.m in Sources */,
 				898B02DC1DF82722005FC512 /* YXHOfficialTableViewController.m in Sources */,
 				898B02D61DF82722005FC512 /* UIView+YXHCategory.m in Sources */,
 				EBF0D9861DF6E99900265D0A /* LiveModel.m in Sources */,
+				89906A7D1DF8F2EB00DBE041 /* YXHPlayViewController.m in Sources */,
 				898B02D41DF82722005FC512 /* UIImage+YXHCycle.m in Sources */,
 				898B02D81DF82722005FC512 /* YXHBangumiCollectionViewController.m in Sources */,
 				898B02DF1DF82722005FC512 /* YXHBangumiListViewController.m in Sources */,
@@ -1354,6 +1479,7 @@
 				C59C28B81DF64665002AD225 /* collectionModel.m in Sources */,
 				898B02E71DF82722005FC512 /* YXHNewBangumiCollectionViewCell.m in Sources */,
 				898B02D51DF82722005FC512 /* UIImageView+YXHCycle.m in Sources */,
+				89906AD31DF9286700DBE041 /* YXHTimeListViewController.m in Sources */,
 				898B02811DF82722005FC512 /* YXHNewBangumiModel.m in Sources */,
 				898B02EB1DF82722005FC512 /* YXHSectionHeaderCollectionReusableView.m in Sources */,
 				EBF0D9851DF6E99900265D0A /* Banner.m in Sources */,
@@ -1365,6 +1491,8 @@
 				C59C29AB1DF64F3F002AD225 /* TuiJianModel.m in Sources */,
 				898B02E31DF82722005FC512 /* YXHDetailHeader.m in Sources */,
 				EBF0D9A61DF6E99900265D0A /* MoseAndCatViewController.m in Sources */,
+				89906AD61DF92EFE00DBE041 /* YXHTimeListModel.m in Sources */,
+				89906AD01DF9090600DBE041 /* NSDate+Time.m in Sources */,
 				898B027E1DF82722005FC512 /* YXHDetailepisode.m in Sources */,
 				890D26231DF00BC9004B3A0E /* main.m in Sources */,
 			);

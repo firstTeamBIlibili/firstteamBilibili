@@ -8,6 +8,8 @@
 
 #import "YXHSectionHeaderCollectionReusableView.h"
 #import "UIImageView+YXHCycle.h"
+#import "YXHTimeListViewController.h"
+#import "YXHBangumiCollectionViewController.h"
 
 @interface YXHSectionHeaderCollectionReusableView()
 
@@ -17,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIButton *moreButton;
 
+@property(nonatomic,strong)YXHBangumiCollectionViewController * superVC;
 @end
 
 @implementation YXHSectionHeaderCollectionReusableView
@@ -59,12 +62,33 @@
     //NSLog(@"%@",self.url);
     if ([sender.titleLabel.text isEqualToString:@"更多连载>"])
     {
-        NSLog(@"123");
+        YXHTimeListViewController * timeVC = [[YXHTimeListViewController alloc] init];
+        [self.superVC.navigationController pushViewController:timeVC animated:YES];
     }
     else if ([sender.titleLabel.text isEqualToString:@"分季列表>"])
     {
         NSLog(@"111");
     }
+}
+
+//寻找控件所在的视图控制器
+- (YXHBangumiCollectionViewController *)superVC
+{
+    if (!_superVC)
+    {
+        for (UIView* next = [self superview]; next; next = next.superview)
+        {
+            UIResponder* nextResponder = [next nextResponder];
+            
+            if ([nextResponder isKindOfClass:[YXHBangumiCollectionViewController class]])
+            {
+                _superVC = (YXHBangumiCollectionViewController *)nextResponder;
+                break;
+            }
+        }
+    }
+    
+    return _superVC;
 }
 
 @end

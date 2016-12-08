@@ -76,11 +76,14 @@ static NSString * commentCell = @"commentCell";
 {
     [self.navigationController popViewControllerAnimated:YES];
     self.navigationController.navigationBar.hidden = NO;
+    self.navigationController.navigationBar.alpha = 1;
 }
 
 - (void)requestData
 {
     WeakSelf;
+    //http://bangumi.bilibili.com/api/season_v5?actionKey=appkey&appkey=27eb53fc9058f8c3&build=4000&device=phone&mobi_app=iphone&platform=ios&season_id=2647&sign=ba269256c6e97874386c91da1868a4c4&ts=1480474878&type=bangumi
+    //http://bangumi.bilibili.com/api/season_v5?actionKey=appkey&appkey=27eb53fc9058f8c3&build=4000&device=phone&mobi_app=iphone&platform=ios&season_id=5473&sign=fa3fdd22d1179ee6239b960b3c167573&ts=1481162953&type=bangumi
     [self.manager GET:@"http://bangumi.bilibili.com/api/season_v5?actionKey=appkey&appkey=27eb53fc9058f8c3&build=4000&device=phone&mobi_app=iphone&platform=ios&season_id=2647&sign=ba269256c6e97874386c91da1868a4c4&ts=1480474878&type=bangumi" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //NSLog(@"%@",responseObject[@"result"]);
         YXHDetailModel * model = [[YXHDetailModel alloc] init];
@@ -98,8 +101,8 @@ static NSString * commentCell = @"commentCell";
         [weakSelf.tableView reloadData];
         
         //番剧数据请求成功后再请求评论数据,参数oid是番剧中的av_id
-        YXHDetailepisode * episode = self.episodes.firstObject;
-        NSString * commentUrl = [NSString stringWithFormat:@"http://api.bilibili.com/x/v2/reply?_device=iphone&_hwid=5fdaf2988e676bb9&_ulv=0&access_key=&appkey=27eb53fc9058f8c3&appver=4000&build=4000&oid=%@&platform=ios&pn=1&ps=20&sign=93a0e793ece42ee011aa7cf39255e424&sort=2&type=1",episode.av_id];
+        //YXHDetailepisode * episode = self.episodes.firstObject;
+        NSString * commentUrl = [NSString stringWithFormat:@"http://api.bilibili.com/x/v2/reply?_device=iphone&_hwid=5fdaf2988e676bb9&_ulv=0&access_key=&appkey=27eb53fc9058f8c3&appver=4000&build=4000&nohot=0&oid=1571621&platform=ios&pn=1&ps=20&sign=dd29596eb6bfdfc0374b2ed11a980125&sort=0&type=1"];
         [weakSelf.manager GET:commentUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             NSArray * dataArray = responseObject[@"data"][@"replies"];
             weakSelf.commentArray = [YXHCommentModel mj_objectArrayWithKeyValuesArray:dataArray];

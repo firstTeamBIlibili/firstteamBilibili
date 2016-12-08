@@ -34,6 +34,8 @@
     [self.coverImageView setRoundedImageViewWithUrl:model.cover];
     self.watching_countLabel.text = [NSString stringWithFormat:@"%ld人在看",model.watching_count];
     self.titleLabel.text = model.title;
+    
+    
     if (model.is_finish == 1)
     {
         self.newest_indexLabel.hidden = YES;

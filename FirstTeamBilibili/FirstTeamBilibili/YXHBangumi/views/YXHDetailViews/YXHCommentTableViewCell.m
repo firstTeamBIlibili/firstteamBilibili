@@ -31,7 +31,7 @@
     
     self.nameLabel.text = model.member.uname;
     self.floorLabel.text = [NSString stringWithFormat:@"#%ld",model.floor];
-    self.timeLabel.text = [NSString stringWithFormat:@"%ld",model.ctime];
+    self.timeLabel.text = model.ctime;
     [self.countButton setTitle:[NSString stringWithFormat:@"%ld",model.count] forState:UIControlStateNormal];
     [self.likeButton setTitle:[NSString stringWithFormat:@"%ld",model.like] forState:UIControlStateNormal];
     self.contentLabel.text = model.content[@"message"];

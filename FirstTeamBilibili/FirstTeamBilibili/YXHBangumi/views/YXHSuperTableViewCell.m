@@ -34,7 +34,7 @@
 {
     if (_model.play >= 10000)
     {
-        return [NSString stringWithFormat:@"播放:%.1f",_model.play / 10000.0];
+        return [NSString stringWithFormat:@"播放:%.1f万",_model.play / 10000.0];
     }else
     {
         return [NSString stringWithFormat:@"播放:%ld",_model.play];

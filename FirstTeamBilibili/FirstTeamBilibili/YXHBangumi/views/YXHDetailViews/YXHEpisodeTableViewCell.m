@@ -8,12 +8,13 @@
 
 #import "YXHEpisodeTableViewCell.h"
 #import "YXHDetailepisode.h"
+#import "YXHPlayViewController.h"
 
 @interface YXHEpisodeTableViewCell()
 
 @property(nonatomic,assign)NSInteger previousSelectedIndex;
 @property(nonatomic,strong)NSMutableArray * buttons;
-
+@property(nonatomic,strong)UIButton * lastEpisode;
 @end
 @implementation YXHEpisodeTableViewCell
 
@@ -33,6 +34,14 @@
     label.font = [UIFont systemFontOfSize:14];
     [self.contentView addSubview:label];
     
+    //上次观看按钮
+    _lastEpisode = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_lastEpisode setTitle:[NSString stringWithFormat:@"上次看到:%@",[episodes[_previousSelectedIndex] index]] forState:UIControlStateNormal];
+    _lastEpisode.frame = CGRectMake(50, 40, 100, 20);
+    _lastEpisode.titleLabel.font = [UIFont systemFontOfSize:12];
+    [_lastEpisode setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [_lastEpisode addTarget:self action:@selector(lastEpisodeClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.contentView addSubview:_lastEpisode];
     
     //最新更新标签
     YXHDetailepisode * episode = episodes.firstObject;
@@ -81,6 +90,9 @@
     [super awakeFromNib];
     
 }
+
+
+
 - (NSArray *)buttons
 {
     if (!_buttons)
@@ -97,11 +109,19 @@
 - (void)play:(UIButton *)button
 {
     self.previousSelectedIndex = [self.buttons indexOfObject:button];
+    
     YXHDetailepisode * episode = self.episodes[self.previousSelectedIndex];
+    [self.lastEpisode setTitle:[NSString stringWithFormat:@"上次看到:%@",[self.episodes[_previousSelectedIndex] index]] forState:UIControlStateNormal];
     
-    NSString * url = [NSString stringWithFormat:@"http://bangumi.bilibili.com/anime/v/%@",episode.av_id];
-    NSLog(@"%@",url);
+    YXHPlayViewController * playVC = [[YXHPlayViewController alloc] init];
+    playVC.play_id = episode.episode_id;
+    [self.window.rootViewController presentViewController:playVC animated:YES completion:nil];
     
+}
+
+- (void)lastEpisodeClick
+{
+    [self play:self.buttons[_previousSelectedIndex]];
 }
 
 @end
