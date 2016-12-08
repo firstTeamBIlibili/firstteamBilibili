@@ -5,7 +5,7 @@
 //  Created by 颜晓卉 on 2016/12/1.
 //  Copyright © 2016年 WYZC. All rights reserved.
 //
-
+#import "XIAOJIViewController.h"
 #import "collectionModel.h"
 #import "YJGRecommendViewController.h"
 #import "CollectionViewCell.h"
@@ -191,6 +191,9 @@ static NSString *headReuseID = @"head";
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"推荐");
+    
+    [self.navigationController pushViewController:[[XIAOJIViewController alloc]init]  animated:YES];
+
 }
 
 

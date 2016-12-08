@@ -49,7 +49,7 @@
     }
     else if (sectionIndex == 1)
     {
-        self.moreButton.hidden = NO;
+        self.moreButton.hidden = YES;
         [self.moreButton setTitle:@"分季列表>" forState:UIControlStateNormal];
         self.url = @"http://bangumi.bilibili.com/api/season_group.json?build=4000&device=phone&mobi_app=iphone&platform=ios";
     }

@@ -186,6 +186,7 @@ static NSString * timeListCell = @"timeListCell";
         header.headerImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"bangumi_timeline_%ld",weekIndex]];
         header.weekday.text = model.weekday;
         header.date.text = model.pubDate;
+        
         return header;
     }
     

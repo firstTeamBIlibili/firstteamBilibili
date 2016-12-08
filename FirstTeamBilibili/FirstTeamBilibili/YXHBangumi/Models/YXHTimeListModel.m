@@ -38,12 +38,7 @@
             break;
             
         default:
-        {
-            NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
-            fmt.dateFormat = @"MM-dd";
-            NSDate * date = [formatter dateFromString:pub_date];
-            self.pubDate = [formatter stringFromDate:date];
-        }
+            self.pubDate = [pub_date substringFromIndex:5];
             break;
     }
     

@@ -118,7 +118,8 @@
     [self.superVC.navigationController pushViewController:timeVC animated:YES];
 }
 - (void)changeToBangumiIndex:(UIButton *)sender {
-    NSLog(@"索引");
+    
+    [self.superVC.navigationController pushViewController:[[LoginViewController alloc] init] animated:YES];
 }
 
 
